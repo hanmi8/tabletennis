@@ -1,0 +1,91 @@
+@charset "utf-8";
+
+.appbar {height:56px;background:#888;z-index:100;}
+.container {margin:56px 0 80px 0;padding-bottom:100px;}
+.tabbar {height:80px;background:#888;z-index:100;}
+
+/* appbar */
+.appbar {position:fixed;left:0;right:0;top:0;display:flex;align-items:center;justify-content:space-between;padding:0 10px;}
+.appbar a {width:24px;height:24px;color:#fff;}
+.appbar .branding {font-weight:500;font-size:20px;color:#fff;}
+
+
+/* tabbar */
+.tabbar {position:fixed;left:0;right:0;bottom:0;}
+.tabbar ul {display:flex;align-items:center;justify-content:center;}
+.tabbar li {display:inline-flex;flex:1;height:80px;align-items:center;justify-content:center;}
+.tabbar li a {display:block;}
+.tabbar li.on {background:#555;}
+.tabbar a i {display:block;color:#fff;font-size:20px;text-align:center;margin-bottom:5px;}
+.tabbar a span {display:block;color:#fff;font-size:14px;font-weight:300;}
+
+
+/* container */
+.container {position:absolute;width:100%;height:calc(100% - 136px);}
+.search-wrap {position:relative;display:flex;padding:10px;}
+.search-wrap .search {flex:0 0 calc(100% - 50px);width:calc(100% - 50px);margin-right:6px;}
+.search-wrap .search-btn {position:absolute;top:10px;right:10px;height:calc(100% - 20px);width:44px;padding:2px;}
+.search-wrap .search-btn .btn {height:100%;}
+.search-wrap ul {display:flex;flex-wrap:wrap;margin-left:-2px;margin-right:-2px;}
+.search-wrap ul li {flex:0 0 50%;width:50%;padding:2px;}
+.folding {background:#ccc;text-align:center;padding:10px;margin:0 10px;font-size:14px;border-radius:3px;}
+
+/* list-wrap */
+.list-wrap {padding:10px;margin-top:20px;}
+.list-wrap ul {padding-bottom:40px;}
+.list-wrap ul li {display:flex;align-items:center;justify-content:space-between;height:90px;border:1px solid #ccc;border-radius:5px;padding:0 10px;margin-bottom:5px;}
+.list-wrap ul li .list-left {flex:0 0 100px;width:100px;text-align:left;}
+.list-wrap ul li .list-left strong {display:block;font-weight:500;}
+.list-wrap ul li .list-left span {display:block;color:#888;}
+.list-wrap ul li .list-left label {font-weight:700;}
+.list-wrap ul li .list-center {background:#aaa;color:#fff;border-radius:100px;padding:5px 5px 5px 15px;}
+.list-wrap ul li .list-center span {display:inline-flex;align-items:center;justify-content:center;background:#00487c;color:#fff;border-radius:100px;width:24px;height:24px;margin-left:4px;}
+.list-wrap ul li .list-right {width:100px;text-align:right;}
+.list-wrap ul li .list-right .type-wrap {display:inline-block;}
+.list-wrap ul li .list-right .type-wrap .type {margin-left:10px;}
+.list-wrap ul li .list-right .indicator span {float:right;display:inline-block;width:14px;height:14px;border-radius:100px;border:2px solid #ccc;background:#eee;margin:2px;}
+.list-wrap ul li .list-right .indicator span.on {background:#555;border-color:#555;}
+
+.floating-button {position:fixed;right:10px;bottom:90px;display:flex;align-items:center;justify-content:center;border-radius:100px;padding:10px 20px;background:#333;color:#fff;
+    border:2px solid #fff;box-shadow:0 0 10px rgba(0,0,0,.5); }
+.floating-button i {margin-right:10px;}
+
+
+/* tabs */
+.tabs {display:flex;}
+.tabs li {flex:0 0 50%;max-width:50%;}
+.tabs li a {display:flex;align-items:center;justify-content:center;height:44px;background:#ccc;color:#888;}
+.tabs li.on a {background:#fff;color:#000;font-weight:500;}
+
+/* 예약관리 */
+ul.table {padding:10px;}
+ul.table li {margin-bottom:10px;}
+ul.table>li>strong {position:relative;display:block;width:100%;background:#eee;border-radius:5px;padding:10px;text-align:center;font-weight:500;}
+ul.table>li>strong.on {background:#555;color:#fff;}
+ul.table>li>strong.on i {color:#fff;}
+ul.table>li>strong i {position:absolute;right:10px;top:12px;font-size:14px;color:#555;}
+ul.table li ul.time {display:block;width:100%;}
+ul.table li ul.time li {display:flex;align-items:center;justify-content:space-between;border-bottom:1px dashed #ccc;padding:20px;}
+ul.table li ul.time li>strong {font-size:18px;}
+ul.table li ul.time li span {display:inline-block;padding:3px 10px;color:#888;background:#eee;border-radius:100px;}
+ul.table li ul.time li span.booking.on {background:#1c84c6;color:#fff;}
+ul.table li ul.time li span.impossible.on {background:#ff6666;color:#fff;}
+
+/* 매칭방 정보 */
+.container-header {display:flex;align-items:center;justify-content:space-between;padding:10px;}
+.container-body {border-bottom:1px solid #ccc;}
+.container-body h2 {display:flex;justify-content:space-between;align-items:center;background:#888;padding:10px;color:#fff;font-size:20px;font-weight:500;}
+.container-body h2 span {font-size:16px;}
+.container-body .game-detail {display:flex;align-items:center;justify-content:space-between;background:#ccc;padding:10px;}
+.container-body .game-detail .nickname strong {display:inline-flex;align-items:center;justify-content:center;width:60px;height:60px;background:#fff;border-radius:100px;}
+.container-body .game-detail .nickname label {font-size:26px;font-weight:500;}
+.container-body .game-detail .nickname label span {font-size:16px;font-weight:500;}
+.container-body .game-detail .game-type {text-align:right;}
+.container-body .game-detail .levels {text-align:right;}
+.container-body .parag {padding:20px;}
+
+.container-footer .application li {display:flex;align-items:center;justify-content: space-between;border-bottom:1px dashed #ccc;padding:10px;}
+.container-footer .application li .user-info strong {display:inline-flex;align-items:center;justify-content:center;border-radius:100px;background:#ccc;width:40px;height:40px;}
+.container-footer .application li .user-info label {font-weight:500;margin-left:5px;}
+.container-footer .application li .Participation {width:150px;text-align:right;}
+.container-footer .application li .Participation a {display:inline-block;padding:5px 10px;border-radius:100px;background:#888;color:#fff;}
