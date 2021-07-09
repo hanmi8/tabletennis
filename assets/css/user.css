@@ -56,7 +56,8 @@
 .tabs li {flex:0 0 50%;max-width:50%;}
 .tabs li a {display:flex;align-items:center;justify-content:center;height:44px;background:#ccc;color:#888;}
 .tabs li.on a {background:#fff;color:#000;font-weight:500;}
-
+.tab-contents {display:none;}
+.tab-contents.on {display:block;}
 /* 예약관리 */
 ul.table {padding:10px;}
 ul.table li {margin-bottom:10px;}
@@ -73,7 +74,7 @@ ul.table li ul.time li span.impossible.on {background:#ff6666;color:#fff;}
 
 /* 매칭방 정보 */
 .container-header {display:flex;align-items:center;justify-content:space-between;padding:10px;}
-.container-body {border-bottom:1px solid #ccc;}
+.container-body {}
 .container-body h2 {display:flex;justify-content:space-between;align-items:center;background:#888;padding:10px;color:#fff;font-size:20px;font-weight:500;}
 .container-body h2 span {font-size:16px;}
 .container-body .game-detail {display:flex;align-items:center;justify-content:space-between;background:#ccc;padding:10px;}
@@ -83,9 +84,23 @@ ul.table li ul.time li span.impossible.on {background:#ff6666;color:#fff;}
 .container-body .game-detail .game-type {text-align:right;}
 .container-body .game-detail .levels {text-align:right;}
 .container-body .parag {padding:20px;}
+.container-body .application li {display:flex;align-items:center;justify-content: space-between;border-bottom:1px dashed #ccc;padding:10px;}
+.container-body .application li .user-info strong {display:inline-flex;align-items:center;justify-content:center;border-radius:100px;background:#ccc;width:40px;height:40px;}
+.container-body .application li .user-info label {font-weight:500;margin-left:5px;}
+.container-body .application li .Participation {width:150px;text-align:right;}
+.container-body .application li .Participation a {display:inline-block;padding:5px 10px;border-radius:100px;background:#888;color:#fff;}
 
-.container-footer .application li {display:flex;align-items:center;justify-content: space-between;border-bottom:1px dashed #ccc;padding:10px;}
-.container-footer .application li .user-info strong {display:inline-flex;align-items:center;justify-content:center;border-radius:100px;background:#ccc;width:40px;height:40px;}
-.container-footer .application li .user-info label {font-weight:500;margin-left:5px;}
-.container-footer .application li .Participation {width:150px;text-align:right;}
-.container-footer .application li .Participation a {display:inline-block;padding:5px 10px;border-radius:100px;background:#888;color:#fff;}
+.container-footer {position:absolute;left:0;right:0;bottom:0;display:flex;background:#ddd;padding:10px;}
+.container-footer button {margin-right:10px;}
+.container-footer button:last-child {margin-right:0;}
+
+/* 매칭방 대화 */
+.talk-wrap {padding:10px;}
+.talk-wrap li {display:flex;align-items:flex-start;margin:10px 0;}
+.talk-wrap li.mine {display:flex;align-items:flex-start;justify-content:flex-end;margin-right:20px;}
+.talk-wrap li span {display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;background:#eee;border-radius:100px;}
+.talk-wrap li label {display:inline-block;height:40px;padding-top:10px;font-weight:500;margin:0 20px 0 10px;}
+.talk-wrap li .talk-bubble {position:relative;flex:0 0 calc(100% - 120px);max-width:calc(100% - 120px);background:#eee;border-radius:10px;padding:10px;}
+.talk-wrap li.others .talk-bubble:before {position:absolute;left:-16px;top:10px;content:'';border:6px solid transparent;border-right:10px solid #eee;}
+.talk-wrap li.mine .talk-bubble {background:#ddd;}
+.talk-wrap li.mine .talk-bubble:before {position:absolute;right:-16px;top:10px;content:'';border:6px solid transparent;border-left:10px solid #ddd;}
