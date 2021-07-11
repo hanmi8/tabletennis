@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 .appbar {height:56px;background:#888;z-index:100;}
-.container {margin:56px 0 80px 0;padding-bottom:100px;}
+.container {margin:56px 0 80px 0;padding-bottom:100px;overflow-y:auto;}
 .tabbar {height:80px;background:#888;z-index:100;}
 
 /* appbar */
@@ -32,19 +32,19 @@
 
 /* list-wrap */
 .list-wrap {padding:10px;margin-top:20px;}
-.list-wrap ul {padding-bottom:40px;}
-.list-wrap ul li {display:flex;align-items:center;justify-content:space-between;height:90px;border:1px solid #ccc;border-radius:5px;padding:0 10px;margin-bottom:5px;}
-.list-wrap ul li .list-left {flex:0 0 100px;width:100px;text-align:left;}
-.list-wrap ul li .list-left strong {display:block;font-weight:500;}
-.list-wrap ul li .list-left span {display:block;color:#888;}
-.list-wrap ul li .list-left label {font-weight:700;}
-.list-wrap ul li .list-center {background:#aaa;color:#fff;border-radius:100px;padding:5px 5px 5px 15px;}
-.list-wrap ul li .list-center span {display:inline-flex;align-items:center;justify-content:center;background:#00487c;color:#fff;border-radius:100px;width:24px;height:24px;margin-left:4px;}
-.list-wrap ul li .list-right {width:100px;text-align:right;}
-.list-wrap ul li .list-right .type-wrap {display:inline-block;}
-.list-wrap ul li .list-right .type-wrap .type {margin-left:10px;}
-.list-wrap ul li .list-right .indicator span {float:right;display:inline-block;width:14px;height:14px;border-radius:100px;border:2px solid #ccc;background:#eee;margin:2px;}
-.list-wrap ul li .list-right .indicator span.on {background:#555;border-color:#555;}
+.list-wrap {padding-bottom:40px;}
+.list-wrap li {display:flex;align-items:center;justify-content:space-between;height:90px;border:1px solid #ccc;border-radius:5px;padding:0 10px;margin-bottom:5px;}
+.list-wrap li .list-left {flex:0 0 100px;width:100px;text-align:left;}
+.list-wrap li .list-left strong {display:block;font-weight:500;}
+.list-wrap li .list-left span {display:block;color:#888;}
+.list-wrap li .list-left label {font-weight:700;}
+.list-wrap li .list-center {background:#aaa;color:#fff;border-radius:100px;padding:5px 5px 5px 15px;}
+.list-wrap li .list-center span {display:inline-flex;align-items:center;justify-content:center;background:#00487c;color:#fff;border-radius:100px;width:24px;height:24px;margin-left:4px;}
+.list-wrap li .list-right {width:100px;text-align:right;}
+.list-wrap li .list-right .type-wrap {display:inline-block;}
+.list-wrap li .list-right .type-wrap .type {margin-left:10px;}
+.list-wrap li .list-right .indicator span {float:right;display:inline-block;width:14px;height:14px;border-radius:100px;border:2px solid #ccc;background:#eee;margin:2px;}
+.list-wrap li .list-right .indicator span.on {background:#555;border-color:#555;}
 
 .floating-button {position:fixed;right:10px;bottom:90px;display:flex;align-items:center;justify-content:center;border-radius:100px;padding:10px 20px;background:#333;color:#fff;
     border:2px solid #fff;box-shadow:0 0 10px rgba(0,0,0,.5); }
@@ -104,3 +104,10 @@ ul.table li ul.time li span.impossible.on {background:#ff6666;color:#fff;}
 .talk-wrap li.others .talk-bubble:before {position:absolute;left:-16px;top:10px;content:'';border:6px solid transparent;border-right:10px solid #eee;}
 .talk-wrap li.mine .talk-bubble {background:#ddd;}
 .talk-wrap li.mine .talk-bubble:before {position:absolute;right:-16px;top:10px;content:'';border:6px solid transparent;border-left:10px solid #ddd;}
+
+/* 매칭방 만들기 */
+.gender-levels-wrap {margin-bottom:10px;}
+.gender-levels-wrap .gender-select {margin-bottom:5px;}
+.gender-levels-wrap .levels-btn {display:flex;}
+.gender-levels-wrap .levels-btn button {margin-right:5px;}
+.gender-levels-wrap .levels-btn button:last-child {margin-right:0;}

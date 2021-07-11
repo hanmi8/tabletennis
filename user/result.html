@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>탁구메이트</title>
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/all.css">
+    <link rel="stylesheet" href="../assets/css/font.css">
+    <link rel="stylesheet" href="../assets/css/animate.css">
+    <link rel="stylesheet" href="../assets/css/button.css">
+    <link rel="stylesheet" href="../assets/css/common.css">
+    <link rel="stylesheet" href="../assets/css/user.css">
+    <script type="text/javascript" src="../assets/js/jquery.js"></script>
+    <script type="text/javascript" src="../assets/js/common.js"></script>
+</head>
+<body>
+<div class="wrapper">
+    <div class="appbar">
+        <a href="#" class="home"><i class="fa fa-home"></i></a>
+        <div class="branding">탁구메이트</div>
+        <a href="#" class="more"><i class="fa fa-bars"></i></a>
+    </div>
+    <div class="container">
+        <div class="date-select">
+            <strong>2021년 6월 <a href="#"><i class="fa fa-calendar-alt"></i></a></strong>
+        </div>
+    </div>
+    <!-- tabbar -->
+    <div class="tabbar">
+        <ul>
+            <li class="on">
+                <a href="room.html" class="room">
+                    <i class="fas fa-table-tennis"></i>
+                    <span>매칭방</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="result">
+                    <i class="fas fa-edit"></i>
+                    <span>경기결과</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="ranking">
+                    <i class="fas fa-trophy"></i>
+                    <span>랭킹</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="shop">
+                    <i class="fas fa-tasks"></i>
+                    <span>탁구장예약</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+<script>
+    $(function(){
+        $('.folding').click(function(){
+            $('.folding-contents').slideToggle(200);
+            $(this).children('i').toggleClass('fa-chevron-down fa-chevron-up');
+        })
+    })
+</script>
+</body>
+</html>

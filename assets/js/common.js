@@ -1,4 +1,5 @@
 $(function(){
+    $('.container').css('height',$(window).height() - $('.appbar').outerHeight(true) - $('.tabbar').outerHeight(true));
     //tabs
     $('.tabs').find('a').click(function(){
         var tabID = $(this).attr('href');

@@ -22,79 +22,157 @@
         <a href="#" class="more"><i class="fa fa-bars"></i></a>
     </div>
     <div class="container">
-        <ul class="tabs">
-            <li class="on"><a href="#info">매칭방 정보</a></li>
-            <li><a href="#talk">매칭방 대화</a></li>
-        </ul>
-        <!-- 매칭방 정보 -->
-        <div class="tab-contents" id="info">
-            <div class="container-header">
-                <div class="header-left">
-                    <div class="date">2021년 07월 11일</div>
-                    <div class="time">13:00 ~ 15:00</div>
-                </div>
-                <div class="header-right">
-                    <span class="badge badge-primary">모집중</span>
+        <div class="form-vertical">
+            <div class="form-group">
+                <label class="control-label col-3">날짜</label>
+                <div class="col-9 calendar">
+                    <input type="text" class="form-control">
+                    <a href="#"><i class="fa fa-calendar-alt"></i></a>
                 </div>
             </div>
-            <div class="container-body">
-                <h2>
-                    <label>엘림탁구클럽</label>
-                    <span class="price">￦ 10,000</span>
-                </h2>
-                <div class="game-detail">
-                    <div class="nickname">
-                        <strong><i class="fa fa-user"></i></strong>
-                        <label>김일등 <span class="badge badge-primary">6</span></label>
+            <div class="form-group">
+                <label class="control-label col-3">시간</label>
+                <div class="col-9">
+                    <select class="form-control">
+                        <option>시간 선택</option>
+                        <option>01:00</option>
+                        <option>02:00</option>
+                        <option>03:00</option>
+                        <option>04:00</option>
+                        <option>05:00</option>
+                        <option>06:00</option>
+                        <option>07:00</option>
+                        <option>08:00</option>
+                        <option>09:00</option>
+                        <option>11:00</option>
+                        <option>12:00</option>
+                        <option>13:00</option>
+                        <option>14:00</option>
+                        <option>15:00</option>
+                        <option>16:00</option>
+                        <option>17:00</option>
+                        <option>18:00</option>
+                        <option>19:00</option>
+                        <option>20:00</option>
+                        <option>21:00</option>
+                        <option>22:00</option>
+                        <option>23:00</option>
+                        <option>24:00</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-3">탁구장</label>
+                <div class="col-9 input-btn">
+                    <input type="text" class="form-control">
+                    <button class="btn btn-default"><i class="fa fa-search"></i></button>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-3">탁구장 이용료</label>
+                <div class="col-9 input-price">
+                    <input type="text" class="form-control">
+                    <span>원</span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-3">경기지역</label>
+                <div class="col-9">
+                    <select class="form-control">
+                        <option>시, 도 선택</option>
+                    </select>
+                    <select class="form-control">
+                        <option>읍, 면, 동 선택</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-3">게임인원</label>
+                <div class="col-9">
+                    <select class="form-control">
+                        <option>인원 선택</option>
+                        <option>2명</option>
+                        <option>3명</option>
+                        <option>4명</option>
+                        <option>5명</option>
+                        <option>6명</option>
+                        <option>7명</option>
+                        <option>8명</option>
+                        <option>9명</option>
+                        <option>10명</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-3">게임종류</label>
+                <div class="col-9">
+                    <select class="form-control">
+                        <option>종류 선택</option>
+                        <option>개인전</option>
+                        <option>단체전</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-3">성별/부수</label>
+                <div class="col-9">
+                    <div class="gender-levels-wrap">
+                        <button class="btn btn-default gender-select">관계없음</button>
                     </div>
-                    <ul class="game-type">
-                        <li>개인전</li>
-                        <li>1명 / 2명</li>
-                    </ul>
-                    <ul class="levels">
-                        <li>남 : 6 ~ 7부</li>
-                        <li>여 : 4 ~ 6부</li>
-                    </ul>
+                    <div class="gender-levels-wrap">
+                        <button class="btn btn-primary gender-select">남자</button>
+                        <div class="levels-btn">
+                            <button class="btn btn-default">1</button>
+                            <button class="btn btn-default">2</button>
+                            <button class="btn btn-default">3</button>
+                            <button class="btn btn-default">4</button>
+                            <button class="btn btn-default">5</button>
+                            <button class="btn btn-default">6</button>
+                            <button class="btn btn-primary">7</button>
+                        </div>
+                    </div>
+                    <div class="gender-levels-wrap">
+                        <button class="btn btn-default gender-select">여자</button>
+                        <div class="levels-btn">
+                            <button class="btn btn-default">1</button>
+                            <button class="btn btn-default">2</button>
+                            <button class="btn btn-default">3</button>
+                            <button class="btn btn-default">4</button>
+                            <button class="btn btn-default">5</button>
+                            <button class="btn btn-default">6</button>
+                            <button class="btn btn-default">7</button>
+                        </div>
+                    </div>
                 </div>
-                <div class="parag">
-                    대전 중구 태평동에서 게임하실 분 구합니다. 게임에 관심 있으신 분들은 아래의 "참여신청" 버튼을 눌러주세요.
-                </div>
-                <ul class="application">
-                    <li>
-                        <div class="user-info">
-                            <strong class="thumbnail"><i class="fa fa-user"></i></strong>
-                            <label>이이등 <span class="badge badge-danger">4</span></label>
-                        </div>
-                        <div class="approval">
-                            <span class="badge badge-disable">대기</span>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="user-info">
-                            <strong class="thumbnail"><i class="fa fa-user"></i></strong>
-                            <label>최삼등 <span class="badge badge-primary">6</span></label>
-                        </div>
-                        <div class="approval">
-                        </div>
-                    </li>
-                </ul>
             </div>
-            <div class="container-footer">
-                <button class="btn btn-default">참여취소</button>
-                <button class="btn btn-primary">참여신청</button>
+            <div class="form-group">
+                <label class="control-label col-3">나이</label>
+                <div class="col-9">
+                    <select class="form-control">
+                        <option>나이선택</option>
+                        <option>20대 ~ 30대</option>
+                        <option>30대 ~ 40대</option>
+                        <option>40대 ~ 50대</option>
+                        <option>50대 ~ 60대</option>
+                        <option>60대 ~ 70대</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-3">내용입력</label>
+                <div class="col-9">
+                    <textarea rows="3" class="form-control">
+
+                    </textarea>
+                </div>
             </div>
         </div>
-        <!-- 매칭방 대화 -->
-        <div class="tab-contents" id="talk">
-
-        </div>
-
     </div>
     <!-- tabbar -->
     <div class="tabbar">
         <ul>
             <li class="on">
-                <a href="#" class="room">
+                <a href="room.html" class="room">
                     <i class="fas fa-table-tennis"></i>
                     <span>매칭방</span>
                 </a>
