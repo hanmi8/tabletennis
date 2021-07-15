@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>탁구메이트</title>
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/all.css">
+    <link rel="stylesheet" href="../assets/css/font.css">
+    <link rel="stylesheet" href="../assets/css/animate.css">
+    <link rel="stylesheet" href="../assets/css/button.css">
+    <link rel="stylesheet" href="../assets/css/icheck.css">
+    <link rel="stylesheet" href="../assets/css/common.css">
+    <link rel="stylesheet" href="../assets/css/user.css">
+    <script type="text/javascript" src="../assets/js/jquery.js"></script>
+    <script type="text/javascript" src="../assets/js/icheck.js"></script>
+    <script type="text/javascript" src="../assets/js/common.js"></script>
+</head>
+<body>
+<div class="wrapper">
+    <div class="appbar">
+        <a href="index-before.html" class="home"><i class="fa fa-home"></i></a>
+        <div class="branding">탁구장 예약내역</div>
+        <a href="more.html" class="more"><i class="fa fa-bars"></i></a>
+    </div>
+    <div class="container club-reservation ">
+        <div class="container-body">
+            <ul class="list-wrap">
+                <li>
+                    <input type="radio" class="i-checks" name="group1" checked>
+                    <div class="date">
+                        <strong>07월 10일</strong>
+                        <span>13:00 ~ 15:00</span>
+                    </div>
+                    <div class="club-name">엘림탁구클럽</div>
+                </li>
+                <li>
+                    <input type="radio" class="i-checks" name="group1">
+                    <div class="date">
+                        <strong>07월 15일</strong>
+                        <span>16:00 ~ 18:00</span>
+                    </div>
+                    <div class="club-name">VIP탁구클럽VIP탁구클럽</div>
+                </li>
+                <li>
+                    <input type="radio" class="i-checks" name="group1">
+                    <div class="date">
+                        <strong>07월 16일</strong>
+                        <span>18:00 ~ 20:00</span>
+                    </div>
+                    <div class="club-name">엘림탁구클럽</div>
+                </li>
+                <li>
+                    <input type="radio" class="i-checks" name="group1">
+                    <div class="date">
+                        <strong>07월 19일</strong>
+                        <span>20:00 ~ 22:00</span>
+                    </div>
+                    <div class="club-name">핑퐁탁구클럽</div>
+                </li>
+            </ul>
+        </div>
+        <div class="container-footer">
+            <button class="btn btn-primary"><i class="fa fa-check"></i> 예약취소</button>
+        </div>
+    </div>
+    <!-- tabbar -->
+    <div class="tabbar">
+        <ul>
+            <li>
+                <a href="room.html" class="room">
+                    <i class="fas fa-table-tennis"></i>
+                    <span>매칭방</span>
+                </a>
+            </li>
+            <li>
+                <a href="result.html" class="result">
+                    <i class="fas fa-edit"></i>
+                    <span>경기결과</span>
+                </a>
+            </li>
+            <li>
+                <a href="ranking.html" class="ranking">
+                    <i class="fas fa-trophy"></i>
+                    <span>랭킹</span>
+                </a>
+            </li>
+            <li>
+                <a href="club.html" class="shop">
+                    <i class="fas fa-tasks"></i>
+                    <span>탁구장예약</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+
+<script>
+    $(function(){
+        $('.i-checks').iCheck({
+            checkboxClass: 'icheckbox_square-blue',
+            radioClass: 'iradio_square-blue',
+        });
+    });
+</script>
+</body>
+</html>

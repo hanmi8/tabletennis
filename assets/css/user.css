@@ -1,50 +1,80 @@
 @charset "utf-8";
 
-.appbar {height:56px;background:#888;z-index:100;}
-.container {margin:56px 0 80px 0;padding-bottom:100px;overflow-y:auto;}
-.tabbar {height:80px;background:#888;z-index:100;}
+a {color:#3f4f5f;}
+
+.appbar {height:56px;background:#0e57ae;border-bottom:3px solid #d82c40;z-index:100;}
+.container {margin:56px 0 80px 0;padding-bottom:60px;overflow-y:auto;}
+.tabbar {height:80px;background:#d82c40;border-top:5px solid #2a7be3;z-index:100;}
 
 /* appbar */
 .appbar {position:fixed;left:0;right:0;top:0;display:flex;align-items:center;justify-content:space-between;padding:0 10px;}
 .appbar a {width:24px;height:24px;color:#fff;}
-.appbar .branding {font-weight:500;font-size:20px;color:#fff;}
+.appbar .branding {font-weight:500;font-size:1.25rem;color:#fff;}
 
 
 /* tabbar */
 .tabbar {position:fixed;left:0;right:0;bottom:0;}
 .tabbar ul {display:flex;align-items:center;justify-content:center;}
-.tabbar li {display:inline-flex;flex:1;height:80px;align-items:center;justify-content:center;}
-.tabbar li a {display:block;}
-.tabbar li.on {background:#555;}
-.tabbar a i {display:block;color:#fff;font-size:20px;text-align:center;margin-bottom:5px;}
-.tabbar a span {display:block;color:#fff;font-size:14px;font-weight:300;}
+.tabbar li {flex:1;}
+.tabbar li a {display:block;width:100%;height:80px;text-align:center;padding-top:16px;}
+.tabbar li.on {background:#2a7be3;}
+.tabbar a i {display:block;color:#fff;font-size:1.25rem;text-align:center;margin-bottom:5px;}
+.tabbar a span {display:block;color:#fff;font-size:0.875rem;font-weight:300;}
 
+table {width:100%;border-collapse: collapse;border-top:2px solid #ccc;}
+table th, table td {padding:10px;text-align:center;border-bottom:1px solid #aaa;}
+table th {background:#f4f4f4;font-weight:bold;}
+
+/* modal */
+.modal {position:absolute;left:0;right:0;bottom:0;top:0;display:none;height:100%;background:rgba(0,0,0,0.5);z-index:999;}
+.modal .modal-dialog {position:absolute;left:50%;top:50%;transform:translate(-50%, -50%);width:90%;background:#fff;border-radius:10px;box-shadow:0 0 10px rgba(0,0,0,.2);overflow:hidden;}
+.modal-header {display:flex;align-items:center;justify-content:space-between;padding:10px 20px;background:#1c84c6;color:#fff;}
+.modal-header h2 {display:flex;align-items:center;font-size:1.4rem;}
+.modal-header h2 a {margin-left:10px;color:#fff;}
+.modal-header span.modal-close {flex:0 0 60px;text-align:right;font-size:1.4rem;}
+.modal .modal-body {padding:40px 20px;max-height:500px;overflow-y:auto;}
+.modal .modal-body h5 {font-size:1.2rem;margin-bottom:10px;font-weight:bold;}
+.modal .modal-footer {text-align:center;padding:20px;box-shadow:0 -5px 20px rgba(0,0,0,0.1);}
+.modal .modal-footer button {display:inline-block;width:100px;margin-right:10px;}
+.modal .modal-footer button:last-child {margin-right:0;}
+
+/* list */
+ul.decimal {list-style:decimal;}
+ul.disc {list-style:disc;}
 
 /* container */
 .container {position:absolute;width:100%;height:calc(100% - 136px);}
-.search-wrap {position:relative;display:flex;padding:10px;}
+
+/* search-wrap */
+.search-wrap {position:relative;display:flex;padding:10px 20px;background:#f4f4f4;}
 .search-wrap .search {flex:0 0 calc(100% - 50px);width:calc(100% - 50px);margin-right:6px;}
-.search-wrap .search-btn {position:absolute;top:10px;right:10px;height:calc(100% - 20px);width:44px;padding:2px;}
+.search-wrap .search-btn {position:absolute;top:10px;right:20px;height:calc(100% - 20px);width:44px;padding:2px;}
 .search-wrap .search-btn .btn {height:100%;}
+.search-wrap .search-btn .btn i {margin-right:0;}
 .search-wrap ul {display:flex;flex-wrap:wrap;margin-left:-2px;margin-right:-2px;}
 .search-wrap ul li {flex:0 0 50%;width:50%;padding:2px;}
-.folding {background:#ccc;text-align:center;padding:10px;margin:0 10px;font-size:14px;border-radius:3px;}
+.folding {background:#f4f4f4;padding:0 20px 10px;}
+.folding button i {margin-left:5px;}
 
 /* list-wrap */
-.list-wrap {padding:10px;margin-top:20px;}
-.list-wrap {padding-bottom:40px;}
-.list-wrap li {display:flex;align-items:center;justify-content:space-between;height:90px;border:1px solid #ccc;border-radius:5px;padding:0 10px;margin-bottom:5px;}
-.list-wrap li .list-left {flex:0 0 100px;width:100px;text-align:left;}
+.list-wrap {padding:0 0 40px;}
+.list-wrap li {position:relative;padding:10px 30px 10px 20px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #aaa;}
+.list-wrap li:first-child {box-shadow:0 -1px 6px rgba(0,0,0,0.1);}
+.list-wrap li>i.go {position:absolute;right:10px;top:50%;transform:translateY(-50%);width:15px;text-align:right;color:#aaa;}
+.list-wrap li .list-left {flex:0 0 110px;width:110px;text-align:left;}
 .list-wrap li .list-left strong {display:block;font-weight:500;}
 .list-wrap li .list-left span {display:block;color:#888;}
 .list-wrap li .list-left label {font-weight:700;}
 .list-wrap li .list-center {background:#aaa;color:#fff;border-radius:100px;padding:5px 5px 5px 15px;}
-.list-wrap li .list-center span {display:inline-flex;align-items:center;justify-content:center;background:#00487c;color:#fff;border-radius:100px;width:24px;height:24px;margin-left:4px;}
 .list-wrap li .list-right {width:100px;text-align:right;}
 .list-wrap li .list-right .type-wrap {display:inline-block;}
 .list-wrap li .list-right .type-wrap .type {margin-left:10px;}
-.list-wrap li .list-right .indicator span {float:right;display:inline-block;width:14px;height:14px;border-radius:100px;border:2px solid #ccc;background:#eee;margin:2px;}
+.list-wrap li .list-right .indicator {display:block;}
+.list-wrap li .list-right .indicator:after {content:'';display:block;height:0;clear:both;}
+.list-wrap li .list-right .indicator span {float:right;display:inline-block;width:0.875rem;height:0.875rem;border-radius:100px;border:2px solid #ccc;background:#eee;margin:2px;}
 .list-wrap li .list-right .indicator span.on {background:#555;border-color:#555;}
+.list-wrap li .list-right .price {display:block;}
+.list-wrap li .go {flex:0 0 20px;}
 
 .floating-button {position:fixed;right:10px;bottom:90px;display:flex;align-items:center;justify-content:center;border-radius:100px;padding:10px 20px;background:#333;color:#fff;
     border:2px solid #fff;box-shadow:0 0 10px rgba(0,0,0,.5); }
@@ -58,16 +88,113 @@
 .tabs li.on a {background:#fff;color:#000;font-weight:500;}
 .tab-contents {display:none;}
 .tab-contents.on {display:block;}
-/* 예약관리 */
+
+/* 선수 이름 + 부수 */
+label.player {display:flex;align-items:center;justify-content:center;font-size:1.125rem;font-weight:bold;margin:5px 0;}
+label.player span.levels {display:inline-block;padding:2px 6px;font-size:1rem;margin-left:5px;color:#fff;border-radius:100px;}
+label.player.male span.levels {background:rgba(1,140,244, .6);}
+label.player.female span.levels {background:rgba(237,85,101, .6);}
+
+
+/* 로그인 */
+.login {}
+.login h3 {font-weight:100;text-align:center;font-size:2rem;margin-top:20px;margin-bottom:10px;}
+.login .toggle-btn {padding:20px;}
+.login .login-util {display:flex;justify-content:space-between;margin-top:20px;}
+.login .join {padding:0 20px;margin-top:50px;}
+
+/* 개인정보 수집 및 이용 동의 */
+.policy {padding:20px;}
+.policy section {margin-bottom:50px;color:#555;line-height:1.2em;}
+.policy section h3 {font-size:1.2rem;font-weight:500;margin:10px 0;}
+.policy section ul {padding-left:30px;margin:10px 0 20px;}
+.policy section ul li {word-break: keep-all;margin-bottom:10px;}
+
+/* 회원가입 */
+.toggle-btn {display:flex;}
+.toggle-btn button {margin-right:5px;}
+.toggle-btn button:last-child {margin-right:0;}
+.half {display:flex;}
+.half select {margin-right:10px;}
+.half select:last-child {margin-right:0;}
+
+/* home */
+.home .home-top {position:relative;background:url('../images/visual.png') no-repeat center /contain #000;padding:20px;}
+.home .home-top .location-wrap {margin-bottom:20px;}
+.home .home-top .location-wrap strong {display:flex;align-items:center;font-size:1.4rem;color:#fff;}
+.home .home-top .location-wrap strong i {margin-left:10px;}
+.home .home-top button.login {position:absolute;right:20px;top:20px;display:inline-block;width:100px;height:32px;}
+
+.home .list-wrap {padding:0;}
+.home        .list-wrap li {background:rgba(255,255,255,0.9);padding-right:30px;height:100px;}
+.home.before .list-wrap li {height:80px;margin-bottom:5px;border-radius:10px;}
+.home        .list-wrap li.all-view {background:rgba(200,200,200,0.5);border:none;height:40px;justify-content:center;}
+.home.before .list-wrap li.all-view {border:none;color:#fff;border-radius:10px;}
+.home .list-wrap li .date strong {display:block;font-weight:700;}
+.home .list-wrap li .date span {display:block;}
+.home .list-wrap li .player-wrap label {background:#888;color:#fff;border-radius:100px;padding:5px 20px;}
+.home.before .list-wrap li .go {}
+
+.home .section {padding:20px;}
+.home .section h3 {font-size:1.5rem;font-weight:300;}
+.home .section .popular-list {display:flex;align-items:center;justify-content:space-around;padding:20px 0;}
+.home .section .popular-list li {margin-right:20px;text-align:center;}
+.home .section .popular-list li:last-child {margin-right:0;}
+.home .section .popular-list li .profile-image {display:flex;align-items:center;justify-content:center;width:80px;height:80px;background:#f4f4f4;border-radius:100px;margin:0 auto;}
+.home .section .popular-list li label {display:block;margin-top:10px;}
+.home .section.club .popular-list li .profile-image {border-radius:10px;}
+/* home after */
+.my-state {margin-top:20px;}
+.my-state h3 {color:#fff;font-size:1.4rem;font-weight:100;margin-bottom:10px;}
+.my-state .state {display:flex;}
+.my-state .state li {position:relative;flex:1;background:rgba(255,255,255,0.9);padding:10px 0;margin-right:10px;border-radius:10px;text-align:center;}
+.my-state .state li:last-child {margin-right:0;}
+.my-state .state li h4 {font-size:1.2rem;}
+.my-state .state li strong {font-size:2.6rem;font-weight:bold;}
+.my-state .state li .count {position:absolute;right:-10px;top:-20px;padding:5px 10px;border-radius:100px;color:#fff;font-weight:bold;
+    font-size:1rem;background:#ED5565;border:2px solid #fff;box-shadow:0 0 10px rgba(0,0,0,0.5);}
+
+
+/* 더보기 */
+.more-menu>li {border-bottom:1px solid #aaa;}
+.more-menu>li a {display:block;}
+.more-menu>li>strong {display:flex;align-items:center;font-weight:bold;padding:20px 40px;background:#eee;}
+.more-menu>li>strong i {margin-right:10px;}
+.more-menu>li>ul.depth-second>li {border-bottom:1px dashed #ccc;}
+.more-menu>li>ul.depth-second>li>a {padding:15px 0 15px 70px;}
+.more-menu>li>ul.depth-second>li:last-child {border-bottom:none;}
+
+/* 나의 정보 */
+.myinfo .summary {display:flex;align-items:center;justify-content:space-between;padding:20px;font-size:2rem;
+    font-weight:bold;background:rgba(14, 87, 174, 0.2);}
+.myinfo .summary .profile-image {position:relative;display:flex;align-items:center;justify-content:space-between;
+    width:80px;height:80px;background:#fff;border-radius:10px;overflow:hidden;margin-right:10px;}
+.myinfo .summary .profile-image img {height:100%;}
+.myinfo .summary .profile-image a {position:absolute;left:0;right:0;bottom:0;background:rgba(0,0,0,0.2);font-size:14px;
+    color:#fff;padding:5px;text-align:center;}
+.myinfo .summary .myname strong {display:block;}
+.myinfo .summary .myname span {display:block;font-size:1.4rem;font-weight:400;margin-top:10px;}
+
+/* 탁구장 예약내역 */
+.club-reservation .list-wrap {padding:0;}
+.club-reservation .list-wrap li {height:80px;justify-content:space-around;}
+.club-reservation .list-wrap li .date strong {display:block;}
+.club-reservation .list-wrap li .club-name {width:120px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;text-align:right;font-weight:500;}
+
+/* 친구 */
+.friend .list-wrap {padding:0;}
+.friend .list-wrap li {padding:10px 20px;}
+
+    /* 예약관리 */
 ul.table {padding:10px;}
 ul.table li {margin-bottom:10px;}
 ul.table>li>strong {position:relative;display:block;width:100%;background:#eee;border-radius:5px;padding:10px;text-align:center;font-weight:500;}
 ul.table>li>strong.on {background:#555;color:#fff;}
 ul.table>li>strong.on i {color:#fff;}
-ul.table>li>strong i {position:absolute;right:10px;top:12px;font-size:14px;color:#555;}
+ul.table>li>strong i {position:absolute;right:10px;top:12px;font-size:0.875rem;color:#555;}
 ul.table li ul.time {display:block;width:100%;}
 ul.table li ul.time li {display:flex;align-items:center;justify-content:space-between;border-bottom:1px dashed #ccc;padding:20px;}
-ul.table li ul.time li>strong {font-size:18px;}
+ul.table li ul.time li>strong {font-size:1.125rem;}
 ul.table li ul.time li span {display:inline-block;padding:3px 10px;color:#888;background:#eee;border-radius:100px;}
 ul.table li ul.time li span.booking.on {background:#1c84c6;color:#fff;}
 ul.table li ul.time li span.impossible.on {background:#ff6666;color:#fff;}
@@ -75,12 +202,12 @@ ul.table li ul.time li span.impossible.on {background:#ff6666;color:#fff;}
 /* 매칭방 정보 */
 .container-header {display:flex;align-items:center;justify-content:space-between;padding:10px;}
 .container-body {}
-.container-body h2 {display:flex;justify-content:space-between;align-items:center;background:#888;padding:10px;color:#fff;font-size:20px;font-weight:500;}
-.container-body h2 span {font-size:16px;}
+.container-body h2 {display:flex;justify-content:space-between;align-items:center;background:#888;padding:10px;color:#fff;font-size:1.25rem;font-weight:500;}
+.container-body h2 span {font-size:1rem;}
 .container-body .game-detail {display:flex;align-items:center;justify-content:space-between;background:#ccc;padding:10px;}
 .container-body .game-detail .nickname strong {display:inline-flex;align-items:center;justify-content:center;width:60px;height:60px;background:#fff;border-radius:100px;}
-.container-body .game-detail .nickname label {font-size:26px;font-weight:500;}
-.container-body .game-detail .nickname label span {font-size:16px;font-weight:500;}
+.container-body .game-detail .nickname label {font-size:1.625rem;font-weight:500;}
+.container-body .game-detail .nickname label span {font-size:1rem;font-weight:500;}
 .container-body .game-detail .game-type {text-align:right;}
 .container-body .game-detail .levels {text-align:right;}
 .container-body .parag {padding:20px;}
@@ -90,7 +217,7 @@ ul.table li ul.time li span.impossible.on {background:#ff6666;color:#fff;}
 .container-body .application li .Participation {width:150px;text-align:right;}
 .container-body .application li .Participation a {display:inline-block;padding:5px 10px;border-radius:100px;background:#888;color:#fff;}
 
-.container-footer {position:absolute;left:0;right:0;bottom:0;display:flex;background:#ddd;padding:10px;}
+.container-footer {position:fixed;left:0;right:0;bottom:80px;display:flex;background:#fff;padding:10px;box-shadow:0 0 20px rgba(0,0,0,0.4);}
 .container-footer button {margin-right:10px;}
 .container-footer button:last-child {margin-right:0;}
 
@@ -101,13 +228,67 @@ ul.table li ul.time li span.impossible.on {background:#ff6666;color:#fff;}
 .talk-wrap li span {display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;background:#eee;border-radius:100px;}
 .talk-wrap li label {display:inline-block;height:40px;padding-top:10px;font-weight:500;margin:0 20px 0 10px;}
 .talk-wrap li .talk-bubble {position:relative;flex:0 0 calc(100% - 120px);max-width:calc(100% - 120px);background:#eee;border-radius:10px;padding:10px;}
-.talk-wrap li.others .talk-bubble:before {position:absolute;left:-16px;top:10px;content:'';border:6px solid transparent;border-right:10px solid #eee;}
+.talk-wrap li.others .talk-bubble:before {position:absolute;left:-1rem;top:10px;content:'';border:6px solid transparent;border-right:10px solid #eee;}
 .talk-wrap li.mine .talk-bubble {background:#ddd;}
-.talk-wrap li.mine .talk-bubble:before {position:absolute;right:-16px;top:10px;content:'';border:6px solid transparent;border-left:10px solid #ddd;}
+.talk-wrap li.mine .talk-bubble:before {position:absolute;right:-1rem;top:10px;content:'';border:6px solid transparent;border-left:10px solid #ddd;}
 
 /* 매칭방 만들기 */
-.gender-levels-wrap {margin-bottom:10px;}
+.gender {padding:10px 0;}
+.gender-levels-wrap {display:flex;margin-bottom:10px;align-items:center;border-bottom:1px dashed #aaa;padding-bottom:7px;}
+.gender-levels-wrap.last {border-bottom:none;}
+.gender-levels-wrap.first label {flex:0 0 100%;width:100%;}
 .gender-levels-wrap .gender-select {margin-bottom:5px;}
-.gender-levels-wrap .levels-btn {display:flex;}
+.gender-levels-wrap label {flex:0 0 70px;display:block;padding:5px 0;}
+.gender-levels-wrap .levels-btn {flex:0 0 calc(100% - 70px);display:flex;}
 .gender-levels-wrap .levels-btn button {margin-right:5px;}
 .gender-levels-wrap .levels-btn button:last-child {margin-right:0;}
+
+/* 경기결과 */
+.result .date-select {background:#f4f4f4;}
+.result .date-select strong {display:flex;align-items:center;font-size:1.25rem;font-weight:bold;padding:10px;}
+.result .date-select strong i {margin-left:10px;}
+.result .list-wrap li {height:120px;}
+/*.result .list-wrap li:first-child {box-shadow:0 -1px 6px rgba(0,0,0,0.1);}*/
+.result .list-wrap li .date strong {display:block;font-weight:500;}
+.result .score {display:flex;}
+.player-wrap {position:relative;padding:10px;text-align:center;}
+.player-wrap strong {display:inline-flex;align-items:center;justify-content:center;width:60px;height:40px;font-size:1.25rem;font-weight:bold;border-radius:5px;border:2px solid #ccc;}
+/*.result .score .player:first-child:after {position:absolute;right:-5px;bottom:20px;content:':';font-size:1.25rem;font-weight:bold;}*/
+.result .list-wrap li .place {text-align:right;}
+
+.result .score-wrap {display:flex;align-items:center;justify-content:center;height:200px;background:#eee;text-align:center;}
+
+/* 랭킹 */
+.ranking .list-wrap li {height:80px;}
+.ranking .list-wrap li.first {background: rgba(149,213,255,1);}
+.ranking .list-wrap li.second {background: rgba(149,213,255,.7);}
+.ranking .list-wrap li.third {background: rgba(149,213,255,.4);}
+.ranking .list-wrap li i {display:inline-block;width:40px;font-size:2rem;}
+.ranking .list-wrap li strong {width:40px;text-align:right;}
+.ranking .list-wrap li .player {cursor:pointer;}
+.ranking .list-wrap li .score-wrap {text-align:center;}
+/*.ranking .list-wrap li .score-wrap .count {font-weight:bold;}*/
+.ranking .list-wrap li a {text-align:right;}
+.ranking .list-wrap li a i {font-size:1.2rem;color:rgba(0,0,0,0.2);}
+.ranking .list-wrap li a.on i {font-size:1.2rem;color:rgba(0,0,0,1);}
+
+/* 선수 프로필 정보 */
+.profile-group {display:flex;align-items:center;border-radius:10px;overflow:hidden;margin-bottom:10px;}
+.profile-group li {flex:1;background:#eee;text-align:center;padding:10px;}
+.profile-group li:nth-child(2) {background:#ccc;}
+.form-horizontal {padding:20px 0;}
+
+/* 탁구장예약 */
+.reservation .list-wrap li {height:auto;justify-content:space-between;}
+.reservation .list-wrap .club-master h4 {display:flex;align-items:center;font-size:1.2rem;font-weight:700;margin-bottom:5px;}
+.reservation .list-wrap .club-master h4 i {margin-left:10px;color:rgba(0,0,0,0.2);}
+.reservation .list-wrap .club-master h4 i.on {margin-left:10px;color:rgba(0,0,0,.8);}
+.reservation .list-wrap .club-master strong {display:block;font-size:1rem;}
+.reservation .list-wrap .club-master span {display:block;font-size:1rem;}
+.reservation .list-wrap .club-master .schedule {margin-top:10px;}
+.reservation .list-wrap .club-master .schedule label {display:flex;align-items:center;color:#888;}
+.reservation .list-wrap .club-master .schedule label em {margin-left:5px;color:#333}
+.reservation .list-wrap .club-slave {text-align:right;}
+.reservation .list-wrap .club-slave strong {display:block;margin-bottom:5px;}
+.reservation .list-wrap .club-slave span {display:block;margin-bottom:5px;}
+.reservation .list-wrap .club-slave span .badge {display:inline-block;width:40px;}

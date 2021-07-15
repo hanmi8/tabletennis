@@ -26,28 +26,28 @@
 
 .btn-primary {
     color: #fff;
-    background-color: #457200;
-    border-color: #457200;
+    background-color: #003d86;
+    border-color: #003d86;
 }
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary.focus {
-    background-color: #60970c;
-    border-color: #60970c;
+    background-color: #003d86;
+    border-color: #003d86;
     color: #FFFFFF;
 }
 .btn-primary.disabled,
 .btn-primary:disabled {
     color: #fff;
-    background-color: #18a689;
-    border-color: #18a689;
+    background-color: #003d86;
+    border-color: #003d86;
 }
 .btn-primary:not(:disabled):not(.disabled):active,
 .btn-primary:not(:disabled):not(.disabled).active,
 .show > .btn-primary.dropdown-toggle {
     color: #fff;
-    background-color: #18a689;
-    border-color: #18a689;
+    background-color: #003d86;
+    border-color: #003d86;
 }
 .btn-primary:not(:disabled):not(.disabled):active:focus,
 .btn-primary:not(:disabled):not(.disabled).active:focus,
@@ -179,15 +179,10 @@
     -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
     box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
-.btn-white {
-    color: inherit;
-    background: white;
-    border: 1px solid #e7eaec;
-}
 .btn-default {
     color: inherit;
-    background: #eeeeee;
-    border: 1px solid #ddd;
+    background: #ccc;
+    border: 1px solid #ccc;
 }
 
 
@@ -215,12 +210,17 @@
     color: #ED5565;
 }
 .btn-primary.btn-outline:hover,
- .btn-success.btn-outline:hover,
- .btn-info.btn-outline:hover,
- .btn-warning.btn-outline:hover,
- .btn-danger.btn-outline:hover {
-     color: #fff;
- }
+.btn-success.btn-outline:hover,
+.btn-info.btn-outline:hover,
+.btn-warning.btn-outline:hover,
+.btn-danger.btn-outline:hover {
+    color: #fff;
+}
+
 
 .btn-wrap {position:fixed;left:0;right:0;bottom:80px;background:#ddd;padding:10px;}
+.btn-wrap.normal {position:static;display:flex;background:#eee;padding:10px;}
+.btn-wrap.normal button {margin-right:10px;}
+.btn-wrap.normal button:last-child {margin-right:0;}
 .btn-sm {display:inline-flex;font-size:.8em;padding:2px 5px;width:auto;height:36px;}
+button i {display:inline-block;margin-right:5px;}

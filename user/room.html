@@ -17,9 +17,9 @@
 <body>
 <div class="wrapper">
     <div class="appbar">
-        <a href="#" class="home"><i class="fa fa-home"></i></a>
-        <div class="branding">탁구메이트</div>
-        <a href="#" class="more"><i class="fa fa-bars"></i></a>
+        <a href="index-before.html" class="home"><i class="fa fa-home"></i></a>
+        <div class="branding">매칭방</div>
+        <a href="more.html" class="more"><i class="fa fa-bars"></i></a>
     </div>
     <div class="container">
         <div class="search-wrap">
@@ -66,7 +66,7 @@
                 <button class="btn btn-primary"><i class="fa fa-search"></i></button>
             </div>
         </div>
-        <div class="folding">필터 <i class="fa fa-chevron-down"></i></div>
+        <div class="folding"><button class="btn btn-default">필터 <i class="fa fa-chevron-down"></i></button></div>
 
         <ul class="list-wrap">
             <li onclick="location.href='room_detail.html'">
@@ -76,11 +76,11 @@
                     <label>엘림탁구클럽</label>
                 </div>
                 <div class="list-center">
-                    <strong>김일등 <span class="male">6</span></strong>
+                    <label class="player male">김일등 <span class="levels">6</span></label>
                 </div>
                 <div class="list-right">
                     <div class="type-wrap">
-                        <span class="type">개인전</span>
+                        <span class="type">단체전</span>
                         <span class="level">남6부</span>
                         <span class="type">단식</span>
                     </div>
@@ -92,7 +92,7 @@
                     </div>
                     <div class="price">￦10,000</div>
                 </div>
-                <div class="go"><i class="fa fa-chevron-right"></i></div>
+                <i class="fa fa-caret-right go"></i>
             </li>
             <li onclick="location.href='room_detail.html'">
                 <div class="list-left">
@@ -101,7 +101,7 @@
                     <label>엘림탁구클럽</label>
                 </div>
                 <div class="list-center">
-                    <strong>김일등 <span class="male">6</span></strong>
+                    <label class="player female">이이등 <span class="levels">6</span></label>
                 </div>
                 <div class="list-right">
                     <div class="type-wrap">
@@ -114,7 +114,7 @@
                     </div>
                     <div class="price">￦10,000</div>
                 </div>
-                <div class="go"><i class="fa fa-chevron-right"></i></div>
+                <i class="fa fa-caret-right go"></i>
             </li>
             <li onclick="location.href='room_detail.html'">
                 <div class="list-left">
@@ -123,7 +123,7 @@
                     <label>엘림탁구클럽</label>
                 </div>
                 <div class="list-center">
-                    <strong>김일등 <span class="male">6</span></strong>
+                    <label class="player male">김일등 <span class="levels">6</span></label>
                 </div>
                 <div class="list-right">
                     <div class="type-wrap">
@@ -138,7 +138,7 @@
                     </div>
                     <div class="price">￦10,000</div>
                 </div>
-                <div class="go"><i class="fa fa-chevron-right"></i></div>
+                <i class="fa fa-caret-right go"></i>
             </li>
             <li onclick="location.href='room_detail.html'">
                 <div class="list-left">
@@ -147,7 +147,7 @@
                     <label>엘림탁구클럽</label>
                 </div>
                 <div class="list-center">
-                    <strong>김일등 <span class="male">6</span></strong>
+                    <label class="player male">김일등 <span class="levels">6</span></label>
                 </div>
                 <div class="list-right">
                     <div class="type-wrap">
@@ -164,7 +164,7 @@
                     </div>
                     <div class="price">￦10,000</div>
                 </div>
-                <div class="go"><i class="fa fa-chevron-right"></i></div>
+                <i class="fa fa-caret-right go"></i>
             </li>
         </ul>
         <div class="floating-button" onclick="location.href='room_regist.html'">
@@ -181,19 +181,19 @@
                 </a>
             </li>
             <li>
-                <a href="#" class="result">
+                <a href="result.html" class="result">
                     <i class="fas fa-edit"></i>
                     <span>경기결과</span>
                 </a>
             </li>
             <li>
-                <a href="#" class="ranking">
+                <a href="ranking.html" class="ranking">
                     <i class="fas fa-trophy"></i>
                     <span>랭킹</span>
                 </a>
             </li>
             <li>
-                <a href="#" class="shop">
+                <a href="club.html" class="shop">
                     <i class="fas fa-tasks"></i>
                     <span>탁구장예약</span>
                 </a>
@@ -202,14 +202,5 @@
     </div>
 </div>
 
-
-<script>
-    $(function(){
-        $('.folding').click(function(){
-            $('.folding-contents').slideToggle(200);
-            $(this).children('i').toggleClass('fa-chevron-down fa-chevron-up');
-        })
-    })
-</script>
 </body>
 </html>

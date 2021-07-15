@@ -19,9 +19,9 @@
 <body>
 <div class="wrapper">
     <div class="appbar">
-        <a href="#" class="home"><i class="fa fa-home"></i></a>
-        <div class="branding">탁구메이트</div>
-        <a href="#" class="more"><i class="fa fa-bars"></i></a>
+        <a href="index-before.html" class="home"><i class="fa fa-home"></i></a>
+        <div class="branding">매칭방</div>
+        <a href="more.html" class="more"><i class="fa fa-bars"></i></a>
     </div>
     <div class="container">
         <ul class="tabs">
@@ -36,18 +36,18 @@
                     <div class="time">13:00 ~ 15:00</div>
                 </div>
                 <div class="header-right">
-                    <span class="badge badge-primary">모집중</span>
+                    <span class="levels">모집중</span>
                 </div>
             </div>
             <div class="container-body">
                 <h2>
-                    <label>엘림탁구클럽</label>
+                    <label class="player">엘림탁구클럽</label>
                     <span class="price">￦ 10,000</span>
                 </h2>
                 <div class="game-detail">
                     <div class="nickname">
                         <strong><i class="fa fa-user"></i></strong>
-                        <label>김일등 <span class="badge badge-primary">6</span></label>
+                        <label class="player">김일등 <span class="levels">6</span></label>
                     </div>
                     <ul class="game-type">
                         <li>개인전</li>
@@ -65,7 +65,7 @@
                     <li>
                         <div class="user-info">
                             <strong class="thumbnail"><i class="fa fa-user"></i></strong>
-                            <label>이이등 <span class="badge badge-danger">4</span></label>
+                            <label class="player">이이등 <span class="levels">4</span></label>
                         </div>
                         <div class="approval">
                             <span class="badge badge-disable">대기</span>
@@ -74,7 +74,7 @@
                     <li>
                         <div class="user-info">
                             <strong class="thumbnail"><i class="fa fa-user"></i></strong>
-                            <label>최삼등 <span class="badge badge-primary">6</span></label>
+                            <label class="player">최삼등 <span class="levels">6</span></label>
                         </div>
                         <div class="approval">
                         </div>
@@ -88,6 +88,34 @@
         </div>
         <!-- 매칭방 대화 -->
         <div class="tab-contents" id="talk">
+            <ul class="talk-wrap">
+                <li class="others">
+                    <span></span>
+                    <label class="player">김일등</label>
+                    <div class="talk-bubble">
+                        게임에 궁금하신 내용을 질문해 주세요.
+                    </div>
+                </li>
+                <li class="others">
+                    <span></span>
+                    <label class="player">이이등</label>
+                    <div class="talk-bubble">
+                        특별한 게임 방식이 있나요?
+                    </div>
+                </li>
+                <li class="others">
+                    <span></span>
+                    <label class="player">최삼등</label>
+                    <div class="talk-bubble">
+                        끝나고 뒷풀이가 잇나요?
+                    </div>
+                </li>
+                <li class="mine">
+                    <div class="talk-bubble">
+                        게임에 궁금하신 내용을 질문해 주세요.
+                    </div>
+                </li>
+            </ul>
 
         </div>
 
@@ -102,19 +130,19 @@
                 </a>
             </li>
             <li>
-                <a href="#" class="result">
+                <a href="result.html" class="result">
                     <i class="fas fa-edit"></i>
                     <span>경기결과</span>
                 </a>
             </li>
             <li>
-                <a href="#" class="ranking">
+                <a href="ranking.html" class="ranking">
                     <i class="fas fa-trophy"></i>
                     <span>랭킹</span>
                 </a>
             </li>
             <li>
-                <a href="#" class="shop">
+                <a href="club.html" class="shop">
                     <i class="fas fa-tasks"></i>
                     <span>탁구장예약</span>
                 </a>
