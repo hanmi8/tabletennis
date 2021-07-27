@@ -1,0 +1,31 @@
+
+<div class="modal" id="room-complete-reserve">
+    <div class="modal-dialog">
+        <div class="modal-header">
+            <h2>확인</h2>
+            <span class="modal-close"></span>
+        </div>
+        <div class="modal-body">
+            <i class="fa fa-info-circle"></i>
+            <h5 class="governing">매칭방 생성이 완료되었습니다.</h5>
+            <div class="parag">
+                구성원 모집이 완료되어 경기가 이루어지면,<br>
+                방장에게는 경기마다 5포인트 추가적립됩니다.
+            </div>
+            <div class="question">탁구장을 예약하시겠습니까?</div>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-default">아니오</button>
+            <button class="btn btn-primary" onclick="asyncMovePage('user/club_detail.html')">예</button>
+        </div>
+    </div>
+</div>
+
+<script>
+   $(function(){
+       // modal close
+       $('.modal-close').click(function(){
+           $(this).parents('.modal').hide();
+       })
+   })
+</script>

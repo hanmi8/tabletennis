@@ -1,0 +1,156 @@
+
+    <div class="appbar">
+        <a href="#" onclick="asyncMovePage('user/index_after.html')" class="home" style="line-height:.8rem;font-weight:bold;font-size:.95rem;">tak9<br>mate</a>
+        <div class="branding">회원가입</div>
+        <a href="#" onclick="asyncMovePage('user/more.html')" class="more"><i class="fa fa-bars"></i></a>
+    </div>
+    <div class="container owner">
+        <ul class="step">
+            <li>
+                <span>01</span>
+                <strong>나의정보 입력</strong>
+            </li>
+            <li class="on">
+                <span>02</span>
+                <strong>탁구장정보 입력</strong>
+            </li>
+        </ul>
+        <div class="container-body">
+            <div class="form-vertical">
+                <div class="form-group">
+                    <label class="control-label">탁구장 이름</label>
+                    <div class="">
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">탁구장 사진 등록</label>
+                    <div class="input-btn">
+                        <input type="text" class="form-control">
+                        <button class="btn btn-default">파일찾기</button>
+                        <button class="btn btn-default"><i class="fa fa-plus-circle"></i></button>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">탁구장 주소</label>
+                    <div class="half">
+                        <select class="form-control">
+                            <option>시, 도 선택</option>
+                        </select>
+                        <select class="form-control">
+                            <option>읍, 면, 동 선택</option>
+                        </select>
+                    </div>
+                    <div class="input-btn">
+                        <input type="text" class="form-control" placeholder="상세주소를 입력하세요.">
+                        <button class="btn btn-default"><i class="fa fa-search"></i></button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label class="control-label">전체 탁구대 수</label>
+                            <div class="">
+                                <select class="form-control">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label class="control-label">예약 탁구대 수</label>
+                            <div class="">
+                                <select class="form-control">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">이용시간</label>
+                    <div class="text-info text-small">월 회원의 이용이 적은 시간(유휴시간)을 지정해 주세요.</div>
+                    <div class="use-time first">
+                        <h5>주중</h5>
+                        <div class="half">
+                            <select class="form-control">
+                                <option>시작시간 선택</option>
+                            </select>
+                            <select class="form-control">
+                                <option>종료시간 선택</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="use-time">
+                        <h5>주말</h5>
+                        <div class="half">
+                            <select class="form-control">
+                                <option>시작시간 선택</option>
+                            </select>
+                            <select class="form-control">
+                                <option>종료시간 선택</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">휴무일</label>
+                    <div class="">
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">이용금액</label>
+                    <div class="text-info text-small">유휴시간대를 이용하므로 할인된 금액으로 책정해 주시기 바랍니다.</div>
+                    <div class="input-price">
+                        <input type="text" class="form-control">
+                        <span>￦</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-footer">
+            <button class="btn btn-default">취소</button>
+            <button class="btn btn-primary" onclick="asyncMovePage('owner/login.html')">회원가입</button>
+        </div>
+    </div>
+    <!-- tabbar -->
+    <div class="tabbar">
+        <ul>
+            <li>
+                <a href="#" class="state-reservation" onclick="asyncMovePage('owner/state_reservation.html')">
+                    <i class="fas fa-list"></i>
+                    <span>예약현황</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="state-use" onclick="asyncMovePage('owner/state_use.html')">
+                    <i class="fas fa-table-tennis"></i>
+                    <span>이용현황</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="mngt-reservation" onclick="asyncMovePage('owner/mngt_reservation.html')">
+                    <i class="fas fa-edit"></i>
+                    <span>예약관리</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="offday" onclick="asyncMovePage('owner/offday.html')">
+                    <i class="fas fa-calendar"></i>
+                    <span>휴무일관리</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+

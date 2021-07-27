@@ -1,0 +1,118 @@
+
+<div class="modal" id="room-make-fourth">
+    <div class="modal-dialog">
+        <div class="modal-header">
+            <h2>정보 입력</h2>
+            <span class="modal-close"></span>
+        </div>
+        <div class="modal-body room">
+            <div class="form-vertical">
+                <div class="form-group">
+                    <label class="control-label"><span class="text-danger">*</span> 경기인원</label>
+                    <div class="">
+                        <select class="form-control">
+                            <option>인원 선택</option>
+                            <option>2명</option>
+                            <option>3명</option>
+                            <option>4명</option>
+                            <option>5명</option>
+                            <option>6명</option>
+                            <option>7명</option>
+                            <option>8명</option>
+                            <option>9명</option>
+                            <option>10명</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">경기종류</label>
+                    <div class="">
+                        <select class="form-control">
+                            <option>종류 선택</option>
+                            <option>개인전</option>
+                            <option>단체전</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">성별/부수</label>
+                    <div class="gender">
+                        <div class="gender-levels-wrap first">
+                            <label><input type="checkbox" class="i-checks"> 관계없음</label>
+                        </div>
+                        <div class="gender-levels-wrap">
+                            <label><input type="checkbox" class="i-checks"> 남자</label>
+                            <div class="levels-btn check-btn">
+                                <button class="btn btn-default">S</button>
+                                <button class="btn btn-default">1</button>
+                                <button class="btn btn-default">2</button>
+                                <button class="btn btn-default">3</button>
+                                <button class="btn btn-default">4</button>
+                                <button class="btn btn-default">5</button>
+                                <button class="btn btn-default">6</button>
+                                <button class="btn btn-success">7</button>
+                            </div>
+                        </div>
+                        <div class="gender-levels-wrap last">
+                            <label><input type="checkbox" class="i-checks"> 여자</label>
+                            <div class="levels-btn check-btn">
+                                <button class="btn btn-default">S</button>
+                                <button class="btn btn-default">1</button>
+                                <button class="btn btn-default">2</button>
+                                <button class="btn btn-default">3</button>
+                                <button class="btn btn-default">4</button>
+                                <button class="btn btn-default">5</button>
+                                <button class="btn btn-default">6</button>
+                                <button class="btn btn-default">7</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">나이</label>
+                    <div class="">
+                        <select class="form-control">
+                            <option>나이선택</option>
+                            <option>20대 ~ 30대</option>
+                            <option>30대 ~ 40대</option>
+                            <option>40대 ~ 50대</option>
+                            <option>50대 ~ 60대</option>
+                            <option>60대 ~ 70대</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">내용입력</label>
+                    <div class="">
+                    <textarea rows="3" class="form-control">
+
+                    </textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-default modal-close">취소</button>
+            <button class="btn btn-success modal-close" onclick="fourthInput()">확인</button>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    modalClose();
+    iChecks();
+    function fourthInput() {
+        $('.fourth').find('.content-select').empty()
+        $('.fourth').find('.content-select').addClass('on')
+        $('.fourth').find('.content-select').append('<div class="content-select-detail">\n' +
+            '                                <ul>\n' +
+            '                                    <li>4명</li>\n' +
+            '                                    <li>단체전</li>\n' +
+            '                                    <li>남 6 ~ 7부<br>여 4 ~ 5부</li>\n' +
+            '                                    <li>30대 ~ 40대</li>\n' +
+            '                                    <li>즐거운 게임 함께해요~</li>\n' +
+            '                                </ul>\n' +
+            '                            </div>')
+    }
+</script>

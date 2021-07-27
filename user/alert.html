@@ -1,0 +1,60 @@
+<div class="appbar">
+    <a href="#" onclick="asyncMovePage('user/index_after.html')" class="home"
+       style="line-height:.8rem;font-weight:bold;font-size:.95rem;">tak9<br>mate</a>
+    <div class="branding">알림설정</div>
+    <a href="#" onclick="asyncMovePage('user/more.html')" class="more"><i class="fa fa-bars"></i></a>
+</div>
+<div class="container">
+    <div class="form-vertical">
+        <div class="form-group">
+            <label class="control-label">알림 허용 여부</label>
+            <div class="toggle-btn">
+                <button class="btn btn-success">허용</button>
+                <button class="btn btn-default">거부</button>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label">알림 허용 시간</label>
+            <div class="half">
+                <select class="form-control">
+                    <option>시작시간 선택</option>
+                </select>
+                <select class="form-control">
+                    <option>종료시간 선택</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="container-footer">
+        <button class="btn btn-primary">확인</button>
+    </div>
+</div>
+<!-- tabbar -->
+<div class="tabbar">
+    <ul>
+        <li>
+            <a href="#" class="room" onclick="asyncMovePage('user/room.html')">
+                <i class="fas fa-table-tennis"></i>
+                <span>매칭방</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="result" onclick="asyncMovePage('user/result.html')">
+                <i class="fas fa-edit"></i>
+                <span>경기결과</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="ranking" onclick="asyncMovePage('user/ranking.html')">
+                <i class="fas fa-trophy"></i>
+                <span>랭킹</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="club" onclick="asyncMovePage('user/club.html')">
+                <i class="fas fa-tasks"></i>
+                <span>탁구장예약</span>
+            </a>
+        </li>
+    </ul>
+</div>

@@ -1,0 +1,118 @@
+
+<div class="modal" id="room-make-third">
+    <div class="modal-dialog">
+        <div class="modal-header">
+            <h2>시간 선택</h2>
+            <span class="modal-close"></span>
+        </div>
+        <div class="modal-body room">
+            <section class="club">
+                <div class="reserve-wrap">
+                    <ul class="reserve-tabs">
+                        <li class="on">
+                            <a href="#" data-target="#tab1">
+                                <h5>1탁</h5>
+                                <span class="badge">5</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" data-target="#tab2">
+                                <h5>2탁</h5>
+                                <span class="badge">4</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" data-target="#tab3">
+                                <h5>3탁</h5>
+                                <span class="badge">6</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="reserve-tab-contents on" id="tab1">
+                        <ul class="reserve-time">
+                            <li class="disabled"><span>07:00 ~ 08:00</span></li>
+                            <li class="disabled"><span>08:00 ~ 09:00</span></li>
+                            <li class="disabled"><span>09:00 ~ 10:00</span></li>
+                            <li><span>10:00 ~ 11:00</span></li>
+                            <li><span>11:00 ~ 12:00</span></li>
+                            <li class="disabled"><span>12:00 ~ 13:00</span></li>
+                            <li><span>13:00 ~ 14:00</span></li>
+                            <li><span>14:00 ~ 15:00</span></li>
+                            <li><span>15:00 ~ 16:00</span></li>
+                            <li><span>16:00 ~ 17:00</span></li>
+                            <li><span>17:00 ~ 18:00</span></li>
+                            <li class="disabled"><span>18:00 ~ 19:00</span></li>
+                            <li><span>19:00 ~ 20:00</span></li>
+                            <li><span>20:00 ~ 21:00</span></li>
+                            <li><span>21:00 ~ 22:00</span></li>
+                            <li class="disabled"><span>22:00 ~ 23:00</span></li>
+                            <li class="disabled"><span>23:00 ~ 24:00</span></li>
+                        </ul>
+                    </div>
+                    <div class="reserve-tab-contents" id="tab2">
+                        <ul class="reserve-time">
+                            <li><span>07:00 ~ 08:00</span></li>
+                            <li><span>08:00 ~ 09:00</span></li>
+                            <li class="disabled"><span>09:00 ~ 10:00</span></li>
+                            <li><span>10:00 ~ 11:00</span></li>
+                            <li><span>11:00 ~ 12:00</span></li>
+                            <li><span>12:00 ~ 13:00</span></li>
+                            <li><span>13:00 ~ 14:00</span></li>
+                            <li><span>14:00 ~ 15:00</span></li>
+                            <li class="disabled"><span>15:00 ~ 16:00</span></li>
+                            <li class="disabled"><span>16:00 ~ 17:00</span></li>
+                            <li><span>17:00 ~ 18:00</span></li>
+                            <li><span>18:00 ~ 19:00</span></li>
+                            <li><span>19:00 ~ 20:00</span></li>
+                            <li class="disabled"><span>20:00 ~ 21:00</span></li>
+                            <li class="disabled"><span>21:00 ~ 22:00</span></li>
+                            <li><span>22:00 ~ 23:00</span></li>
+                            <li><span>23:00 ~ 24:00</span></li>
+                        </ul>
+                    </div>
+                    <div class="reserve-tab-contents" id="tab3">
+                        <ul class="reserve-time">
+                            <li><span>07:00 ~ 08:00</span></li>
+                            <li><span>08:00 ~ 09:00</span></li>
+                            <li class="disabled"><span>09:00 ~ 10:00</span></li>
+                            <li><span>10:00 ~ 11:00</span></li>
+                            <li><span>11:00 ~ 12:00</span></li>
+                            <li class="disabled"><span>12:00 ~ 13:00</span></li>
+                            <li class="disabled"><span>13:00 ~ 14:00</span></li>
+                            <li class="disabled"><span>14:00 ~ 15:00</span></li>
+                            <li><span>15:00 ~ 16:00</span></li>
+                            <li><span>16:00 ~ 17:00</span></li>
+                            <li><span>17:00 ~ 18:00</span></li>
+                            <li><span>18:00 ~ 19:00</span></li>
+                            <li><span>19:00 ~ 20:00</span></li>
+                            <li><span>20:00 ~ 21:00</span></li>
+                            <li><span>21:00 ~ 22:00</span></li>
+                            <li><span>22:00 ~ 23:00</span></li>
+                            <li class="disabled"><span>23:00 ~ 24:00</span></li>
+                        </ul>
+                    </div>
+                    <div class="toggle-btn pd-x10">
+                        <button class="btn btn-success">현장결제</button>
+                        <button class="btn btn-default">간편결제</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-default modal-close">취소</button>
+            <button class="btn btn-success modal-close" onclick="thirdInput()">결제하기</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    modalClose();
+    function thirdInput() {
+        $('.third').find('.content-select').empty()
+        $('.third').find('.content-select').addClass('on')
+        $('.third').find('.content-select').append('<div class="content-select-detail">13:00 ~ 15:00</div>')
+    }
+    $('.reserve-time').find('span').click(function(){
+        $(this).parent('li').toggleClass('on');
+    })
+</script>

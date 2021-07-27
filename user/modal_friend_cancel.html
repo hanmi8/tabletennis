@@ -1,0 +1,31 @@
+
+<div class="modal" id="friend-cancel">
+    <div class="modal-dialog">
+        <div class="modal-header">
+            <h2>확인</h2>
+            <span class="modal-close"></span>
+        </div>
+        <div class="modal-body">
+            <div class="text-center">
+                <i class="fa fa-exclamation-triangle"></i>
+                <div class="parag">
+                    친구를 취소하시겠습니까?<br>
+                    <span class="text-small">(친구추가는 "랭킹" 페이지에서 추가하실 수 있습니다.)</span>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-default modal-close">닫기</button>
+            <button class="btn btn-success">확인</button>
+        </div>
+    </div>
+</div>
+
+<script>
+   $(function(){
+       // modal close
+       $('.modal-close').click(function(){
+           $(this).parents('.modal').hide();
+       })
+   })
+</script>

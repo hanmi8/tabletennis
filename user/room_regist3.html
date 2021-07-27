@@ -1,0 +1,163 @@
+<script>
+    $(function () {
+        $('#modal-room-complete-reserve').load('user/modal-room-complete-reserve.html')
+        $('#modal-room-complete-owner').load('user/modal-room-complete-owner.html')
+    })
+</script>
+<div class="appbar">
+    <a href="#" onclick="asyncMovePage('user/index_after.html')" class="home"
+       style="line-height:.8rem;font-weight:bold;font-size:.95rem;">tak9<br>mate</a>
+    <div class="branding">매칭방</div>
+    <a href="#" onclick="asyncMovePage('user/more.html')" class="more"><i class="fa fa-bars"></i></a>
+</div>
+<div class="container room-regist">
+    <ul class="step">
+        <li><span>01</span><strong>일자 선택</strong></li>
+        <li><span>02</span><strong>탁구장 선택</strong></li>
+        <li class="on"><span>03</span><strong>시간 선택</strong></li>
+        <li><span>04</span><strong>정보 입력</strong></li>
+    </ul>
+    <div class="summary">
+        <div class="form-group">
+            <label class="control-label col-4">일자</label>
+            <div class="col-8">7월 26일(월)</div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-4">탁구장</label>
+            <div class="col-8">엘림탁구클럽</div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-4">시간</label>
+            <div class="col-8"></div>
+        </div>
+    </div>
+    <section class="club">
+        <div class="reserve-wrap">
+            <ul class="reserve-tabs">
+                <li class="on">
+                    <a href="#" data-target="#tab1">
+                        <h5>1탁</h5>
+                        <span class="badge">5</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" data-target="#tab2">
+                        <h5>2탁</h5>
+                        <span class="badge">4</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" data-target="#tab3">
+                        <h5>3탁</h5>
+                        <span class="badge">6</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="reserve-tab-contents on" id="tab1">
+                <ul class="reserve-time">
+                    <li class="disabled"><span>07:00 ~ 08:00</span></li>
+                    <li class="disabled"><span>08:00 ~ 09:00</span></li>
+                    <li class="disabled"><span>09:00 ~ 10:00</span></li>
+                    <li><span>10:00 ~ 11:00</span></li>
+                    <li><span>11:00 ~ 12:00</span></li>
+                    <li class="disabled"><span>12:00 ~ 13:00</span></li>
+                    <li><span>13:00 ~ 14:00</span></li>
+                    <li><span>14:00 ~ 15:00</span></li>
+                    <li><span>15:00 ~ 16:00</span></li>
+                    <li><span>16:00 ~ 17:00</span></li>
+                    <li><span>17:00 ~ 18:00</span></li>
+                    <li class="disabled"><span>18:00 ~ 19:00</span></li>
+                    <li><span>19:00 ~ 20:00</span></li>
+                    <li><span>20:00 ~ 21:00</span></li>
+                    <li><span>21:00 ~ 22:00</span></li>
+                    <li class="disabled"><span>22:00 ~ 23:00</span></li>
+                    <li class="disabled"><span>23:00 ~ 24:00</span></li>
+                </ul>
+            </div>
+            <div class="reserve-tab-contents" id="tab2">
+                <ul class="reserve-time">
+                    <li><span>07:00 ~ 08:00</span></li>
+                    <li><span>08:00 ~ 09:00</span></li>
+                    <li class="disabled"><span>09:00 ~ 10:00</span></li>
+                    <li><span>10:00 ~ 11:00</span></li>
+                    <li><span>11:00 ~ 12:00</span></li>
+                    <li><span>12:00 ~ 13:00</span></li>
+                    <li><span>13:00 ~ 14:00</span></li>
+                    <li><span>14:00 ~ 15:00</span></li>
+                    <li class="disabled"><span>15:00 ~ 16:00</span></li>
+                    <li class="disabled"><span>16:00 ~ 17:00</span></li>
+                    <li><span>17:00 ~ 18:00</span></li>
+                    <li><span>18:00 ~ 19:00</span></li>
+                    <li><span>19:00 ~ 20:00</span></li>
+                    <li class="disabled"><span>20:00 ~ 21:00</span></li>
+                    <li class="disabled"><span>21:00 ~ 22:00</span></li>
+                    <li><span>22:00 ~ 23:00</span></li>
+                    <li><span>23:00 ~ 24:00</span></li>
+                </ul>
+            </div>
+            <div class="reserve-tab-contents" id="tab3">
+                <ul class="reserve-time">
+                    <li><span>07:00 ~ 08:00</span></li>
+                    <li><span>08:00 ~ 09:00</span></li>
+                    <li class="disabled"><span>09:00 ~ 10:00</span></li>
+                    <li><span>10:00 ~ 11:00</span></li>
+                    <li><span>11:00 ~ 12:00</span></li>
+                    <li class="disabled"><span>12:00 ~ 13:00</span></li>
+                    <li class="disabled"><span>13:00 ~ 14:00</span></li>
+                    <li class="disabled"><span>14:00 ~ 15:00</span></li>
+                    <li><span>15:00 ~ 16:00</span></li>
+                    <li><span>16:00 ~ 17:00</span></li>
+                    <li><span>17:00 ~ 18:00</span></li>
+                    <li><span>18:00 ~ 19:00</span></li>
+                    <li><span>19:00 ~ 20:00</span></li>
+                    <li><span>20:00 ~ 21:00</span></li>
+                    <li><span>21:00 ~ 22:00</span></li>
+                    <li><span>22:00 ~ 23:00</span></li>
+                    <li class="disabled"><span>23:00 ~ 24:00</span></li>
+                </ul>
+            </div>
+            <div class="toggle-btn pd-x10">
+                <button class="btn btn-success">현장결제</button>
+                <button class="btn btn-default">간편결제</button>
+            </div>
+        </div>
+    </section>
+    <div class="container-footer">
+        <button class="btn btn-default" onclick="asyncMovePage('user/room_regist2.html')">이전</button>
+        <button class="btn btn-primary" onclick="asyncMovePage('user/room_regist4.html')">다음</button>
+    </div>
+</div>
+<!-- tabbar -->
+<div class="tabbar">
+    <ul>
+        <li class="on">
+            <a href="#" class="room" onclick="asyncMovePage('user/room.html')">
+                <i class="fas fa-table-tennis"></i>
+                <span>매칭방</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="result" onclick="asyncMovePage('user/result.html')">
+                <i class="fas fa-edit"></i>
+                <span>경기결과</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="ranking" onclick="asyncMovePage('user/ranking.html')">
+                <i class="fas fa-trophy"></i>
+                <span>랭킹</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="club" onclick="asyncMovePage('user/club.html')">
+                <i class="fas fa-tasks"></i>
+                <span>탁구장예약</span>
+            </a>
+        </li>
+    </ul>
+</div>
+
+<script>
+    reserveTime()
+    reserveTabs()
+</script>

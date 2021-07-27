@@ -1,0 +1,121 @@
+<script>
+    $(function(){
+        $('#list').load('user/list.html')
+    })
+</script>
+<div class="appbar">
+    <a href="#" onclick="asyncMovePage('user/index_after.html')" class="home" style="line-height:.8rem;font-weight:bold;font-size:.95rem;">tak9<br>mate</a>
+    <div class="branding">탁구메이트</div>
+    <a href="#" onclick="asyncMovePage('user/more.html')" class="more"><i class="fa fa-bars"></i></a>
+</div>
+<div class="container home after">
+    <div class="home-top">
+        <div class="location-wrap">
+            <strong>대전시 중구 <i class="fas fa-map-marker-alt"></i></strong>
+        </div>
+        <div class="login-wrap" onclick="asyncMovePage('user/login.html')">
+            <i class="login fa fa-unlock"></i> 나본인
+        </div>
+        <div class="my-state">
+            <ul class="state">
+<!--                <li onclick="asyncMovePage('user/ranking.html')">-->
+<!--                    <h4>랭킹</h4>-->
+<!--                    <div class="num-wrap">-->
+<!--                        <strong>153</strong>-->
+<!--                    </div>-->
+<!--                </li>-->
+                <li onclick="asyncMovePage('user/mygame.html')">
+                    <h4>참여방</h4>
+                    <div class="num-wrap">
+                        <strong><label>신청</label><span>3</span></strong>
+                        <strong><label>승인</label><span>2</span></strong>
+                    </div>
+                </li>
+                <li onclick="asyncMovePage('user/mygame.html')">
+                    <h4>개설방</h4>
+                    <div class="num-wrap">
+                        <strong><label>모집중</label><span>3</span></strong>
+                        <strong><label>모집완료</label><span>3</span></strong>
+                    </div>
+                </li>
+                <li class="game-result" onclick="asyncMovePage('user/mygame.html')">
+                    <h4>경기결과</h4>
+                    <div class="num-wrap">
+                        <strong><label>미입력</label><span>2</span></strong>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="include" id="list"></div>
+    <div class="all-view">전체보기 <i class="fa fa-chevron-circle-right"></i></div>
+    <div class="section">
+        <h3>인기방장</h3>
+        <ul class="popular-list">
+            <li>
+                <strong class="profile-image"><img src="assets/images/user_02.jpg"></strong>
+                <label class="player male">김일등 <span class="levels">6</span></label>
+
+            </li>
+            <li>
+                <strong class="profile-image"><img src="assets/images/user_01.jpg"></strong>
+                <label class="player female">이이등 <span class="levels">5</span></label>
+            </li>
+            <li>
+                <strong class="profile-image"><img src="assets/images/user_03.jpg"></strong>
+                <label class="player male">최삼등 <span class="levels">7</span></label>
+            </li>
+        </ul>
+    </div>
+    <div class="section club">
+        <h3>인기탁구장</h3>
+        <ul class="popular-list">
+            <li>
+                <strong class="profile-image"><img src="assets/images/club_01.jpg"></strong>
+                <label>핑퐁탁구클럽</label>
+            </li>
+            <li>
+                <strong class="profile-image"><img src="assets/images/club_02.jpg"></strong>
+                <label>엘림탁구클럽</label>
+            </li>
+            <li>
+                <strong class="profile-image"><img src="assets/images/club_03.jpg"></strong>
+                <label>VIP탁구클럽</label>
+            </li>
+        </ul>
+    </div>
+    <div class="floating-button" onclick="asyncMovePage('user/room_regist.html')">
+        <i class="fa fa-plus"></i> 매칭방 만들기
+    </div>
+</div>
+<!-- tabbar -->
+<div class="tabbar">
+    <ul>
+        <li>
+            <a href="#" class="room" onclick="asyncMovePage('user/room.html')">
+                <i class="fas fa-table-tennis"></i>
+                <span>매칭방</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="result" onclick="asyncMovePage('user/result.html')">
+                <i class="fas fa-edit"></i>
+                <span>경기결과</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="ranking" onclick="asyncMovePage('user/ranking.html')">
+                <i class="fas fa-trophy"></i>
+                <span>랭킹</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="club" onclick="asyncMovePage('user/club.html')">
+                <i class="fas fa-tasks"></i>
+                <span>탁구장예약</span>
+            </a>
+        </li>
+    </ul>
+</div>

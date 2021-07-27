@@ -1,0 +1,112 @@
+<script>
+    $(function(){
+        $('#modal-room-complete-reserve').load('user/modal-room-complete-reserve.html')
+        $('#modal-room-complete-owner').load('user/modal-room-complete-owner.html')
+    })
+</script>
+<div class="appbar">
+    <a href="#" onclick="asyncMovePage('user/index_after.html')" class="home" style="line-height:.8rem;font-weight:bold;font-size:.95rem;">tak9<br>mate</a>
+    <div class="branding">매칭방</div>
+    <a href="#" onclick="asyncMovePage('user/more.html')" class="more"><i class="fa fa-bars"></i></a>
+</div>
+<div class="container room-regist">
+    <ul class="step">
+        <li class="on"><span>01</span><strong>일자 선택</strong></li>
+        <li><span>02</span><strong>탁구장 선택</strong></li>
+        <li><span>03</span><strong>시간 선택</strong></li>
+        <li><span>04</span><strong>정보 입력</strong></li>
+    </ul>
+    <section class="bg-white">
+        <div class="date-wrap">
+            <a href="#"><i class="fa fa-chevron-left"></i></a><strong>2021년 07월</strong><a href="#"><i class="fa fa-chevron-right"></i></a>
+        </div>
+        <div class="calendar-wrap">
+            <ul class="week">
+                <li class="text-danger">일</li>
+                <li>월</li>
+                <li>화</li>
+                <li>수</li>
+                <li>목</li>
+                <li>금</li>
+                <li class="text-success">토</li>
+            </ul>
+            <ul class="day normal-btn">
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">6</a></li>
+                <li><a href="#">7</a></li>
+                <li><a href="#">8</a></li>
+                <li><a href="#">9</a></li>
+                <li><a href="#">10</a></li>
+                <li><a href="#">11</a></li>
+                <li><a href="#">12</a></li>
+                <li><a href="#">13</a></li>
+                <li><a href="#">14</a></li>
+                <li><a href="#">15</a></li>
+                <li><a href="#">16</a></li>
+                <li><a href="#">17</a></li>
+                <li><a href="#">18</a></li>
+                <li><a href="#">19</a></li>
+                <li><a href="#">20</a></li>
+                <li><a href="#">21</a></li>
+                <li><a href="#">22</a></li>
+                <li><a href="#">23</a></li>
+                <li><a href="#">24</a></li>
+                <li><a href="#">25</a></li>
+                <li><a href="#">26</a></li>
+                <li><a href="#">27</a></li>
+                <li><a href="#">28</a></li>
+                <li><a href="#">29</a></li>
+                <li><a href="#">30</a></li>
+                <li><a href="#">31</a></li>
+            </ul>
+        </div>
+    </section>
+    <div class="container-footer">
+        <button class="btn btn-default" onclick="asyncMovePage('user/room.html')">취소</button>
+        <button class="btn btn-primary" onclick="asyncMovePage('user/room_regist2.html')">다음</button>
+    </div>
+</div>
+<!-- tabbar -->
+<div class="tabbar">
+    <ul>
+        <li class="on">
+            <a href="#" class="room" onclick="asyncMovePage('user/room.html')">
+                <i class="fas fa-table-tennis"></i>
+                <span>매칭방</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="result" onclick="asyncMovePage('user/result.html')">
+                <i class="fas fa-edit"></i>
+                <span>경기결과</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="ranking" onclick="asyncMovePage('user/ranking.html')">
+                <i class="fas fa-trophy"></i>
+                <span>랭킹</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="club" onclick="asyncMovePage('user/club.html')">
+                <i class="fas fa-tasks"></i>
+                <span>탁구장예약</span>
+            </a>
+        </li>
+    </ul>
+</div>
+
+<div class="include" id="modal-room-complete-reserve"></div>
+<div class="include" id="modal-room-complete-owner"></div>
+
+<script>
+    normalBtn()
+</script>
