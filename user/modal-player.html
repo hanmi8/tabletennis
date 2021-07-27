@@ -1,8 +1,8 @@
-<script type="text/javascript" src="../assets/js/common.js"></script>
+
 <div class="modal" id="player-info">
     <div class="modal-dialog">
         <div class="modal-header">
-            <h2><label class="player">이이등 <span class="levels">6</span></label></h2>
+            <h2><label class="player female">이이등 <span class="levels">6</span></label></h2>
             <span class="modal-close"><i class="fa fa-times"></i></span>
         </div>
         <div class="modal-body">
@@ -37,33 +37,33 @@
                     </thead>
                     <tbody>
                     <tr>
-                        <td>06월 23일 13:00</td>
-                        <td><label class="player">이이등 <span class="levels">6</span></label></td>
+                        <td>06/23 13:00</td>
+                        <td><label class="player female">이이등 <span class="levels">6</span></label></td>
                         <td>2:3 패</td>
                     </tr>
                     <tr>
-                        <td>06월 20일 18:00</td>
-                        <td><label class="player">최삼등 <span class="levels">7</span></label></td>
+                        <td>06/20 18:00</td>
+                        <td><label class="player male">최삼등 <span class="levels">7</span></label></td>
                         <td>3:2 승</td>
                     </tr>
                     <tr>
-                        <td>06월 23일 13:00</td>
-                        <td><label class="player">이이등 <span class="levels">6</span></label></td>
+                        <td>06/12 13:00</td>
+                        <td><label class="player female">이이등 <span class="levels">6</span></label></td>
                         <td>2:3 패</td>
                     </tr>
                     <tr>
-                        <td>06월 20일 18:00</td>
-                        <td><label class="player">최삼등 <span class="levels">7</span></label></td>
+                        <td>06/05 18:00</td>
+                        <td><label class="player male">최삼등 <span class="levels">7</span></label></td>
                         <td>3:2 승</td>
                     </tr>
                     <tr>
-                        <td>06월 23일 13:00</td>
-                        <td><label class="player">이이등 <span class="levels">6</span></label></td>
+                        <td>05/31 13:00</td>
+                        <td><label class="player female">이이등 <span class="levels">6</span></label></td>
                         <td>2:3 패</td>
                     </tr>
                     <tr>
-                        <td>06월 20일 18:00</td>
-                        <td><label class="player">최삼등 <span class="levels">7</span></label></td>
+                        <td>05/16 18:00</td>
+                        <td><label class="player male">최삼등 <span class="levels">7</span></label></td>
                         <td>3:2 승</td>
                     </tr>
                     </tbody>
@@ -76,3 +76,12 @@
         </div>
     </div>
 </div>
+
+<script>
+   $(function(){
+       // modal close
+       $('.modal-close').click(function(){
+           $(this).parents('.modal').hide();
+       })
+   })
+</script>

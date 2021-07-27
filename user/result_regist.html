@@ -1,120 +1,39 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>탁구메이트</title>
-    <link rel="stylesheet" href="../assets/css/reset.css">
-    <link rel="stylesheet" href="../assets/css/all.css">
-    <link rel="stylesheet" href="../assets/css/font.css">
-    <link rel="stylesheet" href="../assets/css/animate.css">
-    <link rel="stylesheet" href="../assets/css/icheck.css">
-    <link rel="stylesheet" href="../assets/css/button.css">
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <link rel="stylesheet" href="../assets/css/user.css">
-    <script type="text/javascript" src="../assets/js/jquery.js"></script>
-    <script type="text/javascript" src="../assets/js/icheck.js"></script>
-    <script type="text/javascript" src="../assets/js/common.js"></script>
-</head>
-<body>
-<div class="wrapper">
-    <div class="appbar">
-        <a href="index-before.html" class="home"><i class="fa fa-home"></i></a>
-        <div class="branding">경기결과</div>
-        <a href="more.html" class="more"><i class="fa fa-bars"></i></a>
-    </div>
-    <div class="container result">
-        <div class="container-body">
-            <div class="form-vertical">
-                <div class="form-group">
-                    <label class="control-label col-3">매칭방 선택</label>
+<div class="appbar">
+    <a href="#" onclick="asyncMovePage('user/index_after.html')" class="home" style="line-height:.8rem;font-weight:bold;font-size:.95rem;">tak9<br>mate</a>
+    <div class="branding">경기결과</div>
+    <a href="#" onclick="asyncMovePage('user/more.html')" class="more"><i class="fa fa-bars"></i></a>
+</div>
+<div class="container result">
+    <ul class="tabs">
+        <li class="on"><a href="#tab1">단식</a></li>
+        <li><a href="#tab2">복식</a></li>
+    </ul>
+    <div class="tab-contents on single" id="tab1">
+        <div class="form-vertical bg-white">
+            <div class="form-group">
+                <label class="control-label col-3">매칭방 선택</label>
+                <div class="col-9">
+                    <select class="form-control">
+                        <option>김아무6, 06/29, 13:00, 킹탁구</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-6">
+                    <label class="control-label col-3">상대선수</label>
                     <div class="col-9">
                         <select class="form-control">
-                            <option>김아무6, 06/29, 13:00, 킹탁구</option>
+                            <option>김아무 6</option>
+                            <option>이장미 6</option>
+                            <option>이이등 6</option>
                         </select>
                     </div>
                 </div>
-                <div class="form-group">
-                    <label class="control-label col-3">날짜</label>
-                    <div class="col-9 calendar">
-                        <input type="text" class="form-control">
-                        <a href="#"><i class="fa fa-calendar-alt"></i></a>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label class="control-label col-3">시간</label>
-                    <div class="col-9">
-                        <select class="form-control">
-                            <option>시간 선택</option>
-                            <option>01:00</option>
-                            <option>02:00</option>
-                            <option>03:00</option>
-                            <option>04:00</option>
-                            <option>05:00</option>
-                            <option>06:00</option>
-                            <option>07:00</option>
-                            <option>08:00</option>
-                            <option>09:00</option>
-                            <option>11:00</option>
-                            <option>12:00</option>
-                            <option>13:00</option>
-                            <option>14:00</option>
-                            <option>15:00</option>
-                            <option>16:00</option>
-                            <option>17:00</option>
-                            <option>18:00</option>
-                            <option>19:00</option>
-                            <option>20:00</option>
-                            <option>21:00</option>
-                            <option>22:00</option>
-                            <option>23:00</option>
-                            <option>24:00</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label class="control-label col-3">게임종류</label>
-                    <div class="col-9">
-                        <select class="form-control">
-                            <option>개인전</option>
-                            <option>단체전</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label class="control-label col-3">파트너</label>
-                    <div class="col-9">
-                        <select class="form-control">
-                            <option>김아무</option>
-                            <option>이장미</option>
-                            <option>이이등</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label class="control-label col-3">상대선수 1</label>
-                    <div class="col-9">
-                        <select class="form-control">
-                            <option>김아무</option>
-                            <option>이장미</option>
-                            <option>이이등</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label class="control-label col-3">상대선수 2</label>
-                    <div class="col-9">
-                        <select class="form-control">
-                            <option>김아무</option>
-                            <option>이장미</option>
-                            <option>이이등</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="form-group">
+                <div class="form-group col-6">
                     <label class="control-label col-3">핸디점수</label>
                     <div class="col-9">
                         <select class="form-control">
+                            <option>없음</option>
                             <option>1</option>
                             <option>2</option>
                             <option>3</option>
@@ -124,69 +43,158 @@
                     </div>
                 </div>
             </div>
-            <div class="score-wrap">
-                <div class="score">
-                    <div class="player">
-                        <label>김아무 <span class="levels">6</span></label>
-                        <label>김아무 <span class="levels">6</span></label>
-                        <strong></strong>
+        </div>
+        <div class="score-wrap bg-white mt-10">
+            <div class="score">
+                <div class="player-wrap first">
+                    <label class="player male">김아무 <span class="levels">6</span></label>
+                    <select class="form-control">
+                        <option>점수선택</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                    </select>
+                </div>
+                <div class="player-wrap">
+                    <label class="player male">최삼등 <span class="levels">6</span></label>
+                    <select class="form-control">
+                        <option>점수선택</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tab-contents double" id="tab2">
+        <div class="form-vertical bg-white">
+            <div class="form-group">
+                <label class="control-label col-3">매칭방 선택</label>
+                <div class="col-9">
+                    <select class="form-control">
+                        <option>김아무6, 06/29, 13:00, 킹탁구</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row flex-wrap">
+                <div class="form-group col-6">
+                <label class="control-label col-3">파트너</label>
+                <div class="col-9">
+                    <select class="form-control">
+                        <option>김아무 6</option>
+                        <option>이장미 6</option>
+                        <option>이이등 6</option>
+                    </select>
+                </div>
+            </div>
+                <div class="form-group col-6">
+                    <label class="control-label col-3">상대선수 1</label>
+                    <div class="col-9">
+                        <select class="form-control">
+                            <option>김아무 6</option>
+                            <option>이장미 6</option>
+                            <option>이이등 6</option>
+                        </select>
                     </div>
-                    <div class="player">
-                        <label>이장미 <span class="levels">6</span></label>
-                        <label>이장미 <span class="levels">6</span></label>
-                        <strong></strong>
+                </div>
+                <div class="form-group col-6">
+                    <label class="control-label col-3">핸디점수</label>
+                    <div class="col-9">
+                        <select class="form-control">
+                            <option>없음</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group col-6">
+                    <label class="control-label col-3">상대선수 2</label>
+                    <div class="col-9">
+                        <select class="form-control">
+                            <option>김아무 6</option>
+                            <option>이장미 6</option>
+                            <option>이이등 6</option>
+                        </select>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="container-footer">
-            <button class="btn btn-primary"><i class="fa fa-check"></i> 결과 등록</button>
+        <div class="score-wrap bg-white mt-10">
+            <div class="score">
+                <div class="player-wrap first">
+                    <label class="player male">김아무 <span class="levels">6</span></label>
+                    <label class="player female">이이등 <span class="levels">6</span></label>
+                    <select class="form-control">
+                        <option>점수선택</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                    </select>
+                </div>
+                <div class="player-wrap">
+                    <label class="player male">최삼등 <span class="levels">6</span></label>
+                    <label class="player female">이장미 <span class="levels">6</span></label>
+                    <select class="form-control">
+                        <option>점수선택</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                    </select>
+                </div>
+            </div>
         </div>
     </div>
-    <!-- tabbar -->
-    <div class="tabbar">
-        <ul>
-            <li>
-                <a href="room.html" class="room">
-                    <i class="fas fa-table-tennis"></i>
-                    <span>매칭방</span>
-                </a>
-            </li>
-            <li class="on">
-                <a href="result.html" class="result">
-                    <i class="fas fa-edit"></i>
-                    <span>경기결과</span>
-                </a>
-            </li>
-            <li>
-                <a href="ranking.html" class="ranking">
-                    <i class="fas fa-trophy"></i>
-                    <span>랭킹</span>
-                </a>
-            </li>
-            <li>
-                <a href="club.html" class="shop">
-                    <i class="fas fa-tasks"></i>
-                    <span>탁구장예약</span>
-                </a>
-            </li>
-        </ul>
+    <div class="container-footer">
+        <button class="btn btn-default" onclick="asyncMovePage('result.html')"><i class="fa fa-times"></i> 등록 취소</button>
+        <button class="btn btn-primary"><i class="fa fa-check"></i> 결과 등록</button>
     </div>
 </div>
-
-
-<script>
-    $(function(){
-        $('.folding').click(function(){
-            $('.folding-contents').slideToggle(200);
-            $(this).children('i').toggleClass('fa-chevron-down fa-chevron-up');
-        })
-
-        $('.i-checks').iCheck({
-            checkboxClass: 'icheckbox_square-blue',
-            radioClass: 'iradio_square-blue',
-        });
-    });
-</script>
-</body>
-</html>
+<!-- tabbar -->
+<div class="tabbar">
+    <ul>
+        <li>
+            <a href="#" class="room" onclick="asyncMovePage('user/room.html')">
+                <i class="fas fa-table-tennis"></i>
+                <span>매칭방</span>
+            </a>
+        </li>
+        <li class="on">
+            <a href="#" class="result" onclick="asyncMovePage('user/result.html')">
+                <i class="fas fa-edit"></i>
+                <span>경기결과</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="ranking" onclick="asyncMovePage('user/ranking.html')">
+                <i class="fas fa-trophy"></i>
+                <span>랭킹</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="club" onclick="asyncMovePage('user/club.html')">
+                <i class="fas fa-tasks"></i>
+                <span>탁구장예약</span>
+            </a>
+        </li>
+    </ul>
+</div>

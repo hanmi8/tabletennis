@@ -1,164 +1,151 @@
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>탁구메이트</title>
-    <link rel="stylesheet" href="../assets/css/reset.css">
-    <link rel="stylesheet" href="../assets/css/all.css">
-    <link rel="stylesheet" href="../assets/css/font.css">
-    <link rel="stylesheet" href="../assets/css/animate.css">
-    <link rel="stylesheet" href="../assets/css/button.css">
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <link rel="stylesheet" href="../assets/css/user.css">
-    <script type="text/javascript" src="../assets/js/jquery.js"></script>
-    <script type="text/javascript" src="../assets/js/common.js"></script>
-</head>
-<body>
-<div class="wrapper">
-    <div class="appbar">
-        <a href="index-before.html" class="home"><i class="fa fa-home"></i></a>
-        <div class="branding">매칭방</div>
-        <a href="more.html" class="more"><i class="fa fa-bars"></i></a>
-    </div>
-    <div class="container">
-        <ul class="tabs">
-            <li class="on"><a href="#info">매칭방 정보</a></li>
-            <li><a href="#talk">매칭방 대화</a></li>
-        </ul>
-        <!-- 매칭방 정보 -->
-        <div class="tab-contents on" id="info">
-            <div class="container-header">
-                <div class="header-left">
-                    <div class="date">2021년 07월 11일</div>
-                    <div class="time">13:00 ~ 15:00</div>
-                </div>
-                <div class="header-right">
-                    <span class="levels">모집중</span>
-                </div>
+<script>
+    $(function(){
+        $('#modal-player-info').load('user/modal_player.html')
+    })
+</script>
+<div class="appbar">
+    <a href="#" onclick="asyncMovePage('user/index_after.html')" class="home" style="line-height:.8rem;font-weight:bold;font-size:.95rem;">tak9<br>mate</a>
+    <div class="branding">매칭방</div>
+    <a href="#" onclick="asyncMovePage('user/more.html')" class="more"><i class="fa fa-bars"></i></a>
+</div>
+<div class="container">
+    <ul class="tabs">
+        <li class="on"><a href="#info">매칭방 정보</a></li>
+        <li><a href="#talk">매칭방 대화</a></li>
+    </ul>
+    <!-- 매칭방 정보 -->
+    <div class="tab-contents on" id="info">
+        <div class="container-header">
+            <div class="header-left">
+                <div class="date">2021년 07월 11일</div>
+                <div class="time">13:00 ~ 15:00</div>
             </div>
-            <div class="container-body">
-                <h2>
-                    <label class="player">엘림탁구클럽</label>
-                    <span class="price">￦ 10,000</span>
-                </h2>
-                <div class="game-detail">
-                    <div class="nickname">
-                        <strong><i class="fa fa-user"></i></strong>
-                        <label class="player">김일등 <span class="levels">6</span></label>
-                    </div>
-                    <ul class="game-type">
-                        <li>개인전</li>
-                        <li>1명 / 2명</li>
-                    </ul>
-                    <ul class="levels">
-                        <li>남 : 6 ~ 7부</li>
-                        <li>여 : 4 ~ 6부</li>
-                    </ul>
-                </div>
-                <div class="parag">
-                    대전 중구 태평동에서 게임하실 분 구합니다. 게임에 관심 있으신 분들은 아래의 "참여신청" 버튼을 눌러주세요.
-                </div>
-                <ul class="application">
-                    <li>
-                        <div class="user-info">
-                            <strong class="thumbnail"><i class="fa fa-user"></i></strong>
-                            <label class="player">이이등 <span class="levels">4</span></label>
-                        </div>
-                        <div class="approval">
-                            <span class="badge badge-disable">대기</span>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="user-info">
-                            <strong class="thumbnail"><i class="fa fa-user"></i></strong>
-                            <label class="player">최삼등 <span class="levels">6</span></label>
-                        </div>
-                        <div class="approval">
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="container-footer">
-                <button class="btn btn-default">참여취소</button>
-                <button class="btn btn-primary">참여신청</button>
+            <div class="header-right">
+                <span class="badge badge-success">모집중</span>
             </div>
         </div>
-        <!-- 매칭방 대화 -->
-        <div class="tab-contents" id="talk">
-            <ul class="talk-wrap">
-                <li class="others">
-                    <span></span>
-                    <label class="player">김일등</label>
-                    <div class="talk-bubble">
-                        게임에 궁금하신 내용을 질문해 주세요.
+        <div class="container-body">
+            <h2>
+                <label class="club-name">엘림탁구클럽</label>
+                <span class="price">￦ 10,000</span>
+            </h2>
+            <div class="game-detail">
+                <div class="player-wrap">
+                    <strong><img src="assets/images/user_02.jpg"></strong>
+                    <label class="player male modal-call" data-target="#player-info">김일등 <span class="levels">6</span></label>
+                </div>
+                <ul class="game-type">
+                    <li>개인전</li>
+                    <li>빈자리 1 / 총원 2</li>
+                </ul>
+                <ul class="levels">
+                    <li>남 : 6 ~ 7부</li>
+                    <li>여 : 4 ~ 6부</li>
+                </ul>
+            </div>
+            <div class="parag">
+                대전 중구 태평동에서 경기하실 분 구합니다. 경기에 관심 있으신 분들은 아래의 "참여신청" 버튼을 눌러주세요.
+            </div>
+            <ul class="application">
+                <li>
+                    <div class="player-wrap">
+                        <strong><img src="assets/images/user_01.jpg"></strong>
+                        <label class="player female modal-call" data-target="#player-info">이이등 <span class="levels">4</span><em class="player-detail">40대 / 대전 중구 / 54승 23패</em></label>
+                    </div>
+                    <div class="approval">
+                        <span class="badge badge-disable">대기</span>
                     </div>
                 </li>
-                <li class="others">
-                    <span></span>
-                    <label class="player">이이등</label>
-                    <div class="talk-bubble">
-                        특별한 게임 방식이 있나요?
+                <li>
+                    <div class="player-wrap">
+                        <strong><img src="assets/images/user_03.jpg"></strong>
+                        <label class="player male modal-call" data-target="#player-info">최삼등 <span class="levels">6</span><em class="player-detail">30대 / 대전 중구 / 32승 44패</em></label>
+                    </div>
+                    <div class="approval">
+                        <span class="badge badge-disable">대기</span>
                     </div>
                 </li>
-                <li class="others">
-                    <span></span>
-                    <label class="player">최삼등</label>
-                    <div class="talk-bubble">
-                        끝나고 뒷풀이가 잇나요?
+                <li>
+                    <span class="new">NEW</span>
+                    <div class="player-wrap">
+                        <strong><img src="assets/images/profile-image.png"></strong>
+                        <label class="player male modal-call" data-target="#player-info">나본인 <span class="levels">5</span><em class="player-detail">40대 / 대전 중구 / 62승 24패</em></label>
                     </div>
-                </li>
-                <li class="mine">
-                    <div class="talk-bubble">
-                        게임에 궁금하신 내용을 질문해 주세요.
+                    <div class="approval">
                     </div>
                 </li>
             </ul>
-
         </div>
-
+        <div class="container-footer">
+            <button class="btn btn-default">참여취소</button>
+            <button class="btn btn-primary">참여신청</button>
+        </div>
     </div>
-    <!-- tabbar -->
-    <div class="tabbar">
-        <ul>
-            <li class="on">
-                <a href="room.html" class="room">
-                    <i class="fas fa-table-tennis"></i>
-                    <span>매칭방</span>
-                </a>
+    <!-- 매칭방 대화 -->
+    <div class="tab-contents" id="talk">
+        <ul class="talk-wrap">
+            <li class="others">
+                <span><img src="assets/images/user_01.jpg"></span>
+                <label class="player">김일등</label>
+                <div class="talk-bubble">
+                    질문해 주세요.
+                </div>
             </li>
-            <li>
-                <a href="result.html" class="result">
-                    <i class="fas fa-edit"></i>
-                    <span>경기결과</span>
-                </a>
+            <li class="others">
+                <span><img src="assets/images/user_02.jpg"></span>
+                <label class="player">이이등</label>
+                <div class="talk-bubble">
+                    특별한 경기 방식이 있나요?
+                </div>
             </li>
-            <li>
-                <a href="ranking.html" class="ranking">
-                    <i class="fas fa-trophy"></i>
-                    <span>랭킹</span>
-                </a>
+            <li class="others">
+                <span><img src="assets/images/user_03.jpg"></span>
+                <label class="player">최삼등</label>
+                <div class="talk-bubble">
+                    끝나고 뒷풀이가 잇나요?
+                </div>
             </li>
-            <li>
-                <a href="club.html" class="shop">
-                    <i class="fas fa-tasks"></i>
-                    <span>탁구장예약</span>
-                </a>
+            <li class="mine">
+                <div class="talk-bubble">
+                    경기에 궁금하신 내용을 질문해 주세요.
+                </div>
             </li>
         </ul>
+        <div class="talk-input">
+            <textarea class="form-control rows=2"></textarea>
+            <button class="btn btn-default">입력</button>
+        </div>
     </div>
+
+</div>
+<!-- tabbar -->
+<div class="tabbar">
+    <ul>
+        <li class="on">
+            <a href="#" class="room" onclick="asyncMovePage('user/room.html')">
+                <i class="fas fa-table-tennis"></i>
+                <span>매칭방</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="result" onclick="asyncMovePage('user/result.html')">
+                <i class="fas fa-edit"></i>
+                <span>경기결과</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="ranking" onclick="asyncMovePage('user/ranking.html')">
+                <i class="fas fa-trophy"></i>
+                <span>랭킹</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="club" onclick="asyncMovePage('user/club.html')">
+                <i class="fas fa-tasks"></i>
+                <span>탁구장예약</span>
+            </a>
+        </li>
+    </ul>
 </div>
 
-
-<script>
-    $(function(){
-        $('.folding').click(function(){
-            $('.folding-contents').slideToggle(200);
-            $(this).children('i').toggleClass('fa-chevron-down fa-chevron-up');
-        })
-    })
-</script>
-</body>
-</html>
+<div class="include" id="modal-player-info"></div>

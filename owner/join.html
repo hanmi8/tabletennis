@@ -1,0 +1,88 @@
+
+    <div class="appbar">
+        <a href="#" onclick="asyncMovePage('user/index_after.html')" class="home" style="line-height:.8rem;font-weight:bold;font-size:.95rem;">tak9<br>mate</a>
+        <div class="branding">회원가입</div>
+        <a href="#" onclick="asyncMovePage('user/more.html')" class="more"><i class="fa fa-bars"></i></a>
+    </div>
+    <div class="container owner">
+        <ul class="step">
+            <li class="on">
+                <span>01</span>
+                <strong>나의정보 입력</strong>
+            </li>
+            <li>
+                <span>02</span>
+                <strong>탁구장정보 입력</strong>
+            </li>
+        </ul>
+        <div class="container-body">
+            <div class="form-vertical">
+                <div class="form-group">
+                    <label class="control-label">아이디</label>
+                    <div class="input-btn">
+                        <input type="text" class="form-control">
+                        <button class="btn btn-default">중복확인</button>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">비밀번호</label>
+                    <div class="">
+                        <input type="password" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">비밀번호 확인</label>
+                    <div class="">
+                        <input type="password" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">성명</label>
+                    <div class="">
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">핸드폰 번호</label>
+                    <div class="">
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-footer">
+            <button class="btn btn-default">취소</button>
+            <button class="btn btn-primary" onclick="asyncMovePage('owner/join2.html')">다음</button>
+        </div>
+    </div>
+    <!-- tabbar -->
+    <div class="tabbar">
+        <ul>
+            <li>
+                <a href="#" class="state-reservation" onclick="asyncMovePage('owner/state_reservation.html')">
+                    <i class="fas fa-list"></i>
+                    <span>예약현황</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="state-use" onclick="asyncMovePage('owner/state_use.html')">
+                    <i class="fas fa-table-tennis"></i>
+                    <span>이용현황</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="mngt-reservation" onclick="asyncMovePage('owner/mngt_reservation.html')">
+                    <i class="fas fa-edit"></i>
+                    <span>예약관리</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="offday" onclick="asyncMovePage('owner/offday.html')">
+                    <i class="fas fa-calendar"></i>
+                    <span>휴무일관리</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+

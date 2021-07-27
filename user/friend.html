@@ -1,110 +1,83 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>탁구메이트</title>
-    <link rel="stylesheet" href="../assets/css/reset.css">
-    <link rel="stylesheet" href="../assets/css/all.css">
-    <link rel="stylesheet" href="../assets/css/font.css">
-    <link rel="stylesheet" href="../assets/css/animate.css">
-    <link rel="stylesheet" href="../assets/css/button.css">
-    <link rel="stylesheet" href="../assets/css/icheck.css">
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <link rel="stylesheet" href="../assets/css/user.css">
-    <script type="text/javascript" src="../assets/js/jquery.js"></script>
-    <script type="text/javascript" src="../assets/js/icheck.js"></script>
-    <script type="text/javascript" src="../assets/js/common.js"></script>
-</head>
-<body>
-<div class="wrapper">
-    <div class="appbar">
-        <a href="index-before.html" class="home"><i class="fa fa-home"></i></a>
-        <div class="branding">친구</div>
-        <a href="more.html" class="more"><i class="fa fa-bars"></i></a>
-    </div>
-    <div class="container friend">
-        <ul class="list-wrap">
-            <li>
-                <strong>1위</strong>
-                <div class="player-wrap"><label class="player">김일등 <span class="levels">6</span></label></div>
-                <div class="score-wrap">
-                    <div class="number">2324</div>
-                    <div class="count">50승 62패</div>
-                </div>
-                <a href="#"><i class="fa fa-user"></i></a>
-            </li>
-            <li>
-                <strong>2위</strong>
-                <div class="player-wrap"><label class="player">이이등 <span class="levels">6</span></label></div>
-                <div class="score-wrap">
-                    <div class="number">2020</div>
-                    <div class="count">45승 52패</div>
-                </div>
-                <a href="#"><i class="fa fa-user"></i></a>
-            </li>
-            <li>
-                <strong>3위</strong>
-                <div class="player-wrap"><label class=" player modal-call" data-target="#player-info">최삼등 <span class="levels">6</span></label></div>
-                <div class="score-wrap">
-                    <div class="number">1909</div>
-                    <div class="count">50승 10패</div>
-                </div>
-                <a href="#"><i class="fa fa-user"></i></a>
-            </li>
-            <li>
-                <strong>4위</strong>
-                <div class="player-wrap"><label class=" player modal-call" data-target="#player-info">최삼등 <span class="levels">6</span></label></div>
-                <div class="score-wrap">
-                    <div class="number">1909</div>
-                    <div class="count">50승 10패</div>
-                </div>
-                <a href="#"><i class="fa fa-user"></i></a>
-            </li>
-        </ul>
-    </div>
-    <!-- tabbar -->
-    <div class="tabbar">
-        <ul>
-            <li>
-                <a href="room.html" class="room">
-                    <i class="fas fa-table-tennis"></i>
-                    <span>매칭방</span>
-                </a>
-            </li>
-            <li>
-                <a href="result.html" class="result">
-                    <i class="fas fa-edit"></i>
-                    <span>경기결과</span>
-                </a>
-            </li>
-            <li>
-                <a href="ranking.html" class="ranking">
-                    <i class="fas fa-trophy"></i>
-                    <span>랭킹</span>
-                </a>
-            </li>
-            <li>
-                <a href="club.html" class="shop">
-                    <i class="fas fa-tasks"></i>
-                    <span>탁구장예약</span>
-                </a>
-            </li>
-        </ul>
-    </div>
+<script>
+    $(function(){
+        $('#modal-player').load('user/modal_player.html')
+        $('#modal-friend-cancel').load('user/modal_friend_cancel.html')
+    })
+</script>
+<div class="appbar">
+    <a href="#" onclick="asyncMovePage('user/index_after.html')" class="home" style="line-height:.8rem;font-weight:bold;font-size:.95rem;">tak9<br>mate</a>
+    <div class="branding">친구</div>
+    <a href="#" onclick="asyncMovePage('user/more.html')" class="more"><i class="fa fa-bars"></i></a>
+</div>
+<div class="container friend">
+    <ul class="list-wrap">
+        <li>
+            <strong>1위</strong>
+            <div class="player-wrap"><label class="player male modal-call" data-target="#player-info">김일등 <span class="levels">6</span></label></div>
+            <div class="score-wrap">
+                <div class="number">2324p</div>
+                <div class="count">50승 62패</div>
+            </div>
+            <a href="#" class="modal-call" data-target="#friend-cancel"><i class="fa fa-user"></i></a>
+        </li>
+        <li>
+            <strong>2위</strong>
+            <div class="player-wrap"><label class="player female modal-call" data-target="#player-info">이이등 <span class="levels">6</span></label></div>
+            <div class="score-wrap">
+                <div class="number">2020p</div>
+                <div class="count">45승 52패</div>
+            </div>
+            <a href="#" class="modal-call" data-target="#friend-cancel"><i class="fa fa-user"></i></a>
+        </li>
+        <li>
+            <strong>3위</strong>
+            <div class="player-wrap"><label class="player male modal-call" data-target="#player-info">최삼등 <span class="levels">6</span></label></div>
+            <div class="score-wrap">
+                <div class="number">1909p</div>
+                <div class="count">50승 10패</div>
+            </div>
+            <a href="#" class="modal-call" data-target="#friend-cancel"><i class="fa fa-user"></i></a>
+        </li>
+        <li>
+            <strong>4위</strong>
+            <div class="player-wrap"><label class="player male modal-call" data-target="#player-info">박사등 <span class="levels">6</span></label></div>
+            <div class="score-wrap">
+                <div class="number">1909p</div>
+                <div class="count">50승 10패</div>
+            </div>
+            <a href="#" class="modal-call" data-target="#friend-cancel"><i class="fa fa-user"></i></a>
+        </li>
+    </ul>
+</div>
+<!-- tabbar -->
+<div class="tabbar">
+    <ul>
+        <li>
+            <a href="#" class="room" onclick="asyncMovePage('user/room.html')">
+                <i class="fas fa-table-tennis"></i>
+                <span>매칭방</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="result" onclick="asyncMovePage('user/result.html')">
+                <i class="fas fa-edit"></i>
+                <span>경기결과</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="ranking" onclick="asyncMovePage('user/ranking.html')">
+                <i class="fas fa-trophy"></i>
+                <span>랭킹</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="club" onclick="asyncMovePage('user/club.html')">
+                <i class="fas fa-tasks"></i>
+                <span>탁구장예약</span>
+            </a>
+        </li>
+    </ul>
 </div>
 
 <div class="include" id="modal-player"></div>
-
-
-<script>
-    $(function(){
-        $('#modal-player').load('modal-player.html');
-        $('.i-checks').iCheck({
-            checkboxClass: 'icheckbox_square-blue',
-            radioClass: 'iradio_square-blue',
-        });
-    });
-</script>
-</body>
-</html>
+<div class="include" id="modal-friend-cancel"></div>
