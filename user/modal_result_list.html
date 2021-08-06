@@ -1,0 +1,63 @@
+
+<div class="modal" id="result-list">
+    <div class="modal-dialog result">
+        <div class="modal-header">
+            <h2>결과 미 등록 경기</h2>
+            <span class="modal-close"></span>
+        </div>
+        <div class="modal-body" style="padding-left:0;padding-right:0;">
+            <ul class="list-wrap box-shadow box-border-radius">
+                <li onclick="asyncMovePage('user/result_regist.html')">
+                    <div class="list-left">
+                        <strong>07/11(일)</strong>
+                        <span>18:00</span>
+                        <label>핑퐁탁구클럽</label>
+                    </div>
+                    <div class="list-center">
+                        <label class="player male">김일등 <span class="levels">6</span></label>
+<!--                        <div class="num-people">빈자리 1/ 총원 2</div>-->
+                    </div>
+                    <div class="list-right">
+                        <div class="type-wrap">
+                            <span class="level">남6부</span>
+                        </div>
+                        <div class="price"><span class="badge badge-disable">￦10,000</span></div>
+                    </div>
+                    <i class="fa fa-caret-right go"></i>
+                </li>
+                <li onclick="asyncMovePage('user/result_regist.html')">
+                    <div class="list-left">
+                        <strong>07/11(일)</strong>
+                        <span>18:00</span>
+                        <label>VIP탁구클럽</label>
+                    </div>
+                    <div class="list-center">
+                        <label class="player female">이이등 <span class="levels">6</span></label>
+<!--                        <div class="num-people">빈자리 1/ 총원 2</div>-->
+                    </div>
+                    <div class="list-right">
+                        <div class="type-wrap">
+                            <span class="level">남6부</span>
+                        </div>
+                        <div class="price"><span class="badge badge-disable">￦8,000</span></div>
+                    </div>
+                    <i class="fa fa-caret-right go"></i>
+                </li>
+            </ul>
+
+        </div>
+        <div class="modal-footer">
+<!--            <button class="btn btn-default modal-close">아니오</button>-->
+            <button class="btn btn-primary modal-close">확인</button>
+        </div>
+    </div>
+</div>
+
+<script>
+   $(function(){
+       // modal close
+       $('.modal-close').click(function(){
+           $(this).parents('.modal').hide();
+       })
+   })
+</script>

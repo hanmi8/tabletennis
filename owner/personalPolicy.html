@@ -1,7 +1,8 @@
 <div class="appbar">
-    <a href="#" onclick="asyncMovePage('user/index_after.html')" class="home" style="line-height:.8rem;font-weight:bold;font-size:.95rem;">tak9<br>mate</a>
+    <a href="#" onclick="asyncMovePage('user/index_after.html')" class="home"
+       style="line-height:.8rem;font-weight:bold;font-size:.95rem;">tak9<br>mate</a>
     <div class="branding">개인정보 처리방침</div>
-    <a href="#" onclick="asyncMovePage('user/more.html')" class="more"><i class="fa fa-bars"></i></a>
+    <a href="#" onclick="asyncMovePage('owner/more.html')" class="more"><i class="fa fa-bars"></i></a>
 </div>
 <div class="container">
     <div class="container-body">
@@ -124,9 +125,9 @@
 <div class="tabbar">
     <ul>
         <li>
-            <a href="#" class="state-reservation" onclick="asyncMovePage('owner/state_reservation.html')">
-                <i class="fas fa-list"></i>
-                <span>예약현황</span>
+            <a href="#" class="state-reservation" onclick="asyncMovePage('owner/mngt_reservation.html')">
+                <i class="fas fa-edit"></i>
+                <span>예약관리</span>
             </a>
         </li>
         <li>
@@ -136,15 +137,15 @@
             </a>
         </li>
         <li>
-            <a href="#" class="mngt-reservation" onclick="asyncMovePage('owner/mngt_reservation.html')">
-                <i class="fas fa-edit"></i>
-                <span>예약관리</span>
+            <a href="#" class="day-off" onclick="asyncMovePage('owner/day_off.html')">
+                <i class="fas fa-calendar"></i>
+                <span>휴무일관리</span>
             </a>
         </li>
         <li>
-            <a href="#" class="offday" onclick="asyncMovePage('owner/offday.html')">
-                <i class="fas fa-calendar"></i>
-                <span>휴무일관리</span>
+            <a href="#" class="mngt-reservation" onclick="asyncMovePage('owner/mngt_table.html')">
+                <i class="fas fa-table"></i>
+                <span>탁구대관리</span>
             </a>
         </li>
     </ul>

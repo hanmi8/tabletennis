@@ -1,5 +1,5 @@
 
-<div class="modal" id="friend-cancel">
+<div class="modal" id="participation-cancel">
     <div class="modal-dialog confirm">
 <!--        <div class="modal-header">-->
 <!--            <h2>확인</h2>-->
@@ -9,8 +9,8 @@
             <div class="text-center">
                 <i class="fa fa-exclamation-triangle"></i>
                 <div class="parag">
-                    친구를 취소하시겠습니까?<br>
-                    <span class="text-small">(친구추가는 "랭킹" 페이지에서 추가하실 수 있습니다.)</span>
+                    경기에 참여를 취소하시겠습니까?<br>
+                    <span class="text-small">(경기 1일전 참여취소 시.....)</span>
                 </div>
             </div>
         </div>
@@ -22,10 +22,5 @@
 </div>
 
 <script>
-   $(function(){
-       // modal close
-       $('.modal-close').click(function(){
-           $(this).parents('.modal').hide();
-       })
-   })
+    modalClose()
 </script>

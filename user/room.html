@@ -5,7 +5,7 @@
 </script>
 
 <div class="appbar">
-    <a href="#" onclick="asyncMovePage('user/index_after.html')" class="home" style="line-height:.8rem;font-weight:bold;font-size:.95rem;">tak9<br>mate</a>
+    <a href="#" onclick="asyncMovePage('user/index_after.html')" class="home">tak9<br>mate</a>
     <div class="branding">매칭방</div>
     <a href="#" onclick="asyncMovePage('user/more.html')" class="more"><i class="fa fa-bars"></i></a>
 </div>
@@ -28,25 +28,31 @@
                 <li>
                     <select class="form-control">
                         <option>부수선택</option>
+                        <option>== 남자 ==</option>
+                        <option>남 S 부</option>
+                        <option>남 1 부</option>
+                        <option>남 2 부</option>
+                        <option>남 3 부</option>
+                        <option>남 4 부</option>
+                        <option>남 5 부</option>
+                        <option>남 6 부</option>
+                        <option>남 7 부</option>
+                        <option>== 여자 ==</option>
+                        <option>여 S 부</option>
+                        <option>여 1 부</option>
+                        <option>여 2 부</option>
+                        <option>여 3 부</option>
+                        <option>여 4 부</option>
+                        <option>여 5 부</option>
+                        <option>여 6 부</option>
+                        <option>여 7 부</option>
                     </select>
                 </li>
                 <li>
-                    <select class="form-control">
-                        <option>성별선택</option>
-                    </select>
+                    <input type="text" class="form-control calendar-call" value="2021/07/30">
                 </li>
-                <li>
-                    <input type="date" class="form-control">
-                </li>
-                <li>
-                    <select class="form-control">
-                        <option>시간선택</option>
-                    </select>
-                </li>
-                <li>
-                    <select class="form-control">
-                        <option>나이선택</option>
-                    </select>
+                <li class="width100">
+                    <input type="text" class="form-control" placeholder="별칭입력">
                 </li>
             </ul>
         </div>
@@ -58,7 +64,7 @@
         <button class="btn btn-outline btn-default">필터 <i class="fa fa-chevron-down"></i></button>
     </div>
 
-    <div class="include" id="list"></div>
+    <div class="include box-shadow box-border-radius" id="list"></div>
 
     <div class="floating-button" onclick="asyncMovePage('user/room_make1.html')">
         <i class="fa fa-plus"></i> 매칭방 만들기
@@ -88,8 +94,12 @@
         <li>
             <a href="#" class="club" onclick="asyncMovePage('user/club.html')">
                 <i class="fas fa-tasks"></i>
-                <span>탁구장예약</span>
+                <span>탁구장현황</span>
             </a>
         </li>
     </ul>
 </div>
+
+<script>
+    calendarModalInput()
+</script>

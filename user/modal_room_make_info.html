@@ -1,5 +1,5 @@
 
-<div class="modal" id="room-make-fourth">
+<div class="modal" id="room-make-info">
     <div class="modal-dialog">
         <div class="modal-header">
             <h2>정보 입력</h2>
@@ -10,18 +10,7 @@
                 <div class="form-group">
                     <label class="control-label"><span class="text-danger">*</span> 경기인원</label>
                     <div class="">
-                        <select class="form-control">
-                            <option>인원 선택</option>
-                            <option>2명</option>
-                            <option>3명</option>
-                            <option>4명</option>
-                            <option>5명</option>
-                            <option>6명</option>
-                            <option>7명</option>
-                            <option>8명</option>
-                            <option>9명</option>
-                            <option>10명</option>
-                        </select>
+                        <input type="text" class="form-control">
                     </div>
                 </div>
                 <div class="form-group">
@@ -93,7 +82,7 @@
         </div>
         <div class="modal-footer">
             <button class="btn btn-default modal-close">취소</button>
-            <button class="btn btn-success modal-close" onclick="fourthInput()">확인</button>
+            <button class="btn btn-success modal-close" onclick="infoInput()">확인</button>
         </div>
     </div>
 </div>
@@ -102,10 +91,11 @@
 <script>
     modalClose();
     iChecks();
-    function fourthInput() {
-        $('.fourth').find('.content-select').empty()
-        $('.fourth').find('.content-select').addClass('on')
-        $('.fourth').find('.content-select').append('<div class="content-select-detail">\n' +
+    buttonCheck()
+    function infoInput() {
+        $('.info').find('.content-select').empty()
+        $('.info').find('.content-select').addClass('on')
+        $('.info').find('.content-select').append('<div class="content-select-detail">\n' +
             '                                <ul>\n' +
             '                                    <li>4명</li>\n' +
             '                                    <li>단체전</li>\n' +

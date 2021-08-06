@@ -1,0 +1,108 @@
+
+<div class="modal" id="room-make-time-noClub">
+    <div class="modal-dialog">
+        <div class="modal-header">
+            <h2>시간 선택</h2>
+            <span class="modal-close"></span>
+        </div>
+        <div class="modal-body room">
+            <div class="scroll-horizontal">
+                <div class="scroll_x_table table-scroll" id="table-scroll">
+                    <div class="table-wrap">
+                        <table class="table table-wide main-table">
+                            <thead>
+                            <tr>
+                                <th class="fixed-side">시간대</th>
+                                <th>예약가능여부</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td class="fixed-side">07 ~ 08</td>
+                                <td><span class="badge-reservation">예약하기</span></td>
+                            </tr>
+                            <tr>
+                                <td class="fixed-side">08 ~ 09</td>
+                                <td><span class="badge-reservation">예약하기</span></td>
+                            </tr>
+                            <tr>
+                                <td class="fixed-side">09 ~ 10</td>
+                                <td><span class="badge-reservation">예약하기</span></td>
+                            </tr>
+                            <tr>
+                                <td class="fixed-side">10 ~ 11</td>
+                                <td><span class="badge-reservation">예약하기</span></td>
+                            </tr>
+                            <tr>
+                                <td class="fixed-side">11 ~ 12</td>
+                                <td><span class="badge-reservation">예약하기</span></td>
+                            </tr>
+                            <tr>
+                                <td class="fixed-side">12 ~ 13</td>
+                                <td><span class="badge-reservation">예약하기</span></td>
+                            </tr>
+                            <tr>
+                                <td class="fixed-side">13 ~ 14</td>
+                                <td><span class="badge-reservation">예약하기</span></td>
+                            </tr>
+                            <tr>
+                                <td class="fixed-side">14 ~ 15</td>
+                                <td><span class="badge-reservation">예약하기</span></td>
+                            </tr>
+                            <tr>
+                                <td class="fixed-side">15 ~ 16</td>
+                                <td><span class="badge-reservation">예약하기</span></td>
+                            </tr>
+                            <tr>
+                                <td class="fixed-side">17 ~ 18</td>
+                                <td><span class="badge-reservation">예약하기</span></td>
+                            </tr>
+                            <tr>
+                                <td class="fixed-side">18 ~ 19</td>
+                                <td><span class="badge-reservation">예약하기</span></td>
+                            </tr>
+                            <tr>
+                                <td class="fixed-side">19 ~ 20</td>
+                                <td><span class="badge-reservation">예약하기</span></td>
+                            </tr>
+                            <tr>
+                                <td class="fixed-side">20 ~ 21</td>
+                                <td><span class="badge-reservation">예약하기</span></td>
+                            </tr>
+                            <tr>
+                                <td class="fixed-side">21 ~ 22</td>
+                                <td><span class="badge-reservation">예약하기</span></td>
+                            </tr>
+                            <tr>
+                                <td class="fixed-side">22 ~ 23</td>
+                                <td><span class="badge-reservation">예약하기</span></td>
+                            </tr>
+                            <tr>
+                                <td class="fixed-side">23 ~ 24</td>
+                                <td><span class="badge-reservation">예약하기</span></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-default modal-close">취소</button>
+            <button class="btn btn-success modal-close" onclick="timeInput()">확인</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    modalClose();
+    reserveTabs();
+    reserveTime();
+    badgeReservation();
+    function timeInput() {
+        $('.time').find('.content-select').empty()
+        $('.time').find('.content-select').addClass('on')
+        $('.time').find('.content-select').append('<div class="content-select-detail">13:00 ~ 15:00</div>')
+    }
+    $(".main-table").clone(true).appendTo('#table-scroll').addClass('clone');
+</script>

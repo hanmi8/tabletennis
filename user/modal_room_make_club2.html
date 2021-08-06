@@ -1,0 +1,128 @@
+
+<div class="modal" id="room-make-club">
+    <div class="modal-dialog">
+        <div class="modal-header">
+            <h2>탁구장 선택</h2>
+            <span class="modal-close"></span>
+        </div>
+        <div class="modal-body room">
+            <div class="search-wrap">
+                <div class="search">
+                    <ul>
+                        <li>
+                            <select class="form-control">
+                                <option>시, 도 선택</option>
+                            </select>
+                        </li>
+                        <li>
+                            <select class="form-control">
+                                <option>읍,면,동 선택</option>
+                            </select>
+                        </li>
+                        <li class="width100">
+                            <input type="text" class="form-control" placeholder="탁구장명 입력">
+                        </li>
+                    </ul>
+                </div>
+                <div class="search-btn">
+                    <button class="btn btn-primary"><i class="fa fa-search"></i></button>
+                </div>
+            </div>
+            <section class="club">
+                <ul class="list-wrap list-selected">
+                    <li>
+                        <div class="club-master">
+                            <h4>VIP탁구클럽 <i class="fa fa-star"></i></h4>
+                            <!-- <strong>042-525-0000</strong> -->
+                            <span>대전시 서구 탄방동 12</span>
+                            <div class="schedule">
+                                <label>주중 : <em>09:00 ~ 17:00</em></label>
+                                <label>주말 : <em>09:00 ~ 22:00</em></label>
+                            </div>
+                        </div>
+                        <div class="club-slave">
+                            <strong class="badge badge-disable">￦ 10,000</strong>
+                            <span>예약탁구대 <i class="badge badge-primary">2</i></span>
+                            <span>전체탁구대 <i class="badge badge-success">4</i></span>
+                            <strong class="badge badge-disable">월요일 휴무</strong>
+                        </div>
+                        <!-- <i class="fa fa-caret-right go"></i> -->
+                    </li>
+                    <li>
+                        <div class="club-master">
+                            <h4>태평탁구 <i class="fa fa-star"></i></h4>
+                            <!-- <strong>042-525-0000</strong> -->
+                            <span>대전시 서구 탄방동 12</span>
+                            <div class="schedule">
+                                <label>주중 : <em>09:00 ~ 17:00</em></label>
+                                <label>주말 : <em>09:00 ~ 22:00</em></label>
+                            </div>
+                        </div>
+                        <div class="club-slave">
+                            <strong class="badge badge-disable">￦ 10,000</strong>
+                            <span>예약탁구대 <i class="badge badge-primary">8</i></span>
+                            <span>전체탁구대 <i class="badge badge-success">10</i></span>
+                            <strong class="badge badge-disable">월요일 휴무</strong>
+                        </div>
+                        <!-- <i class="fa fa-caret-right go"></i> -->
+                    </li>
+                    <li>
+                        <div class="club-master">
+                            <h4>핑퐁탁구클럽 <i class="fa fa-star on"></i></h4>
+                            <!-- <strong>042-525-0000</strong> -->
+                            <span>대전시 서구 탄방동 12</span>
+                            <div class="schedule">
+                                <label>주중 : <em>09:00 ~ 17:00</em></label>
+                                <label>주말 : <em>09:00 ~ 22:00</em></label>
+                            </div>
+                        </div>
+                        <div class="club-slave">
+                            <strong class="badge badge-disable">￦ 10,000</strong>
+                            <span>예약탁구대 <i class="badge badge-primary">6</i></span>
+                            <span>전체탁구대 <i class="badge badge-success">8</i></span>
+                            <strong class="badge badge-disable">월요일 휴무</strong>
+                        </div>
+                        <!-- <i class="fa fa-caret-right go"></i> -->
+                    </li>
+                    <li>
+                        <div class="club-master">
+                            <h4>엘림탁구클럽 <i class="fa fa-star on"></i></h4>
+                            <!-- <strong>042-525-0000</strong> -->
+                            <span>대전시 서구 탄방동 12</span>
+                            <div class="schedule">
+                                <label>주중 : <em>09:00 ~ 17:00</em></label>
+                                <label>주말 : <em>09:00 ~ 22:00</em></label>
+                            </div>
+                        </div>
+                        <div class="club-slave">
+                            <strong class="badge badge-disable">￦ 10,000</strong>
+                            <span>예약탁구대 <i class="badge badge-primary">3</i></span>
+                            <span>전체탁구대 <i class="badge badge-success">6</i></span>
+                            <strong class="badge badge-disable">월요일 휴무</strong>
+                        </div>
+                        <!-- <i class="fa fa-caret-right go"></i> -->
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-default modal-close">취소</button>
+            <button class="btn btn-success modal-close" onclick="secondInput()">확인</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    modalClose();
+    listSelected();
+    function secondInput() {
+        $('.second').find('.content-select').empty()
+        $('.second').find('.content-select').addClass('on')
+        $('.second').find('.content-select').append('<div class="content-select-detail">\n' +
+            '                    엘림탁구클럽\n' +
+            '                    <div class="text-small mt-10">\n' +
+            '                        대전시 중구 / ￦10,000\n' +
+            '                    </div>\n' +
+            '                </div>')
+    }
+</script>

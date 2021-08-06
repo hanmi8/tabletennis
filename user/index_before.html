@@ -4,7 +4,7 @@
     })
 </script>
 <div class="appbar">
-    <a href="#" onclick="asyncMovePage('user/index_after.html')" class="home" style="line-height:.8rem;font-weight:bold;font-size:.95rem;">tak9<br>mate</a>
+    <a href="#" onclick="asyncMovePage('user/index_after.html')" class="home">tak9<br>mate</a>
     <div class="branding">탁구메이트</div>
     <a href="#" onclick="asyncMovePage('user/more.html')" class="more"><i class="fa fa-bars"></i></a>
 </div>
@@ -18,7 +18,7 @@
         </div>
 
         <div class="include" id="list"></div>
-        <div class="all-view">전체보기 <i class="fa fa-chevron-circle-right"></i></div>
+        <div class="all-view" onclick="asyncMovePage('user/room.html')">전체보기 <i class="fa fa-chevron-circle-right"></i></div>
     </div>
     <div class="section">
         <h3>인기방장</h3>
@@ -55,7 +55,7 @@
             </li>
         </ul>
     </div>
-    <div class="floating-button" onclick="asyncMovePage('user/room_regist.html')">
+    <div class="floating-button" onclick="asyncMovePage('user/room_make1.html')">
         <i class="fa fa-plus"></i> 매칭방 만들기
     </div>
 </div>
@@ -83,7 +83,7 @@
         <li>
             <a href="#" class="club" onclick="asyncMovePage('user/club.html')">
                 <i class="fas fa-tasks"></i>
-                <span>탁구장예약</span>
+                <span>탁구장현황</span>
             </a>
         </li>
     </ul>

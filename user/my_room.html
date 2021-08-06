@@ -1,0 +1,194 @@
+<script>
+    $(function () {
+        $('#modal-participation-cancel').load('user/modal_participation_cancel.html')
+    })
+</script>
+<div class="appbar">
+    <a href="#" onclick="asyncMovePage('user/index_after.html')" class="home">tak9<br>mate</a>
+    <div class="branding">나의 매칭방</div>
+    <a href="#" onclick="asyncMovePage('user/more.html')" class="more"><i class="fa fa-bars"></i></a>
+</div>
+<div class="container myinfo">
+    <ul class="tabs">
+        <li class="on"><a href="#tab1">참여방</a></li>
+        <li><a href="#tab2">개설방</a></li>
+    </ul>
+    <div class="tab-contents on" id="tab1">
+
+        <ul class="list-wrap label">
+            <li>
+                <label>
+                    <input type="radio" class="i-checks" name="group1">
+                    <div class="list-left">
+                        <strong>07/11(일)</strong>
+                        <span>18:00</span>
+                        <label>핑퐁탁구클럽</label>
+                    </div>
+                    <div class="list-center">
+                        <label class="player male">김일등 <span class="levels">6</span></label>
+                        <div class="num-people">승인완료</div>
+                    </div>
+                    <div class="list-right">
+                        <div class="type-wrap">
+                            <span class="level">남6부</span>
+                        </div>
+                        <div class="price"><span class="badge badge-disable">￦10,000</span></div>
+                    </div>
+                    <!-- <i class="fa fa-caret-right go"></i> -->
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="radio" class="i-checks" name="group1">
+                    <div class="list-left">
+                        <strong>07/11(일)</strong>
+                        <span>18:00</span>
+                        <label>VIP탁구클럽</label>
+                    </div>
+                    <div class="list-center">
+                        <label class="player female">이이등 <span class="levels">6</span></label>
+                        <div class="num-people">승인대기</div>
+                    </div>
+                    <div class="list-right">
+                        <div class="type-wrap">
+                            <span class="level">남6부</span>
+                        </div>
+                        <div class="price"><span class="badge badge-disable">￦8,000</span></div>
+                    </div>
+                    <!-- <i class="fa fa-caret-right go"></i> -->
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="radio" class="i-checks" name="group1">
+                    <div class="list-left">
+                        <strong>07/11(일)</strong>
+                        <span>18:00</span>
+                        <label>엘림탁구클럽</label>
+                    </div>
+                    <div class="list-center">
+                        <label class="player male">김일등 <span class="levels">6</span></label>
+                        <div class="num-people">빈자리 2 / 총원 4</div>
+                    </div>
+                    <div class="list-right">
+                        <div class="type-wrap">
+                            <span class="type">단체전/</span>
+                            <span class="level">남6~7부 여4~6부</span>
+                        </div>
+                        <div class="price"><span class="badge badge-disable">￦9,000</span></div>
+                    </div>
+                    <!-- <i class="fa fa-caret-right go"></i> -->
+                </label>
+            </li>
+        </ul>
+
+        <div class="container-footer">
+            <button class="btn btn-default modal-call" data-target="#participation-cancel">참여 취소</button>
+            <button class="btn btn-primary" onclick="asyncMovePage('user/room_detail.html')">상세페이지</button>
+        </div>
+    </div>
+    <div class="tab-contents" id="tab2">
+        <ul class="list-wrap label">
+            <li>
+                <label>
+                    <input type="radio" class="i-checks" name="group1">
+                    <div class="list-left">
+                        <strong>07/11(일)</strong>
+                        <span>18:00</span>
+                        <label>핑퐁탁구클럽</label>
+                    </div>
+                    <div class="list-center">
+                        <label class="player male">김일등 <span class="levels">6</span></label>
+                        <div class="num-people">모집완료 / 총원 2</div>
+                    </div>
+                    <div class="list-right">
+                        <div class="type-wrap">
+                            <span class="level">남6부</span>
+                        </div>
+                        <div class="price"><span class="badge badge-disable">￦10,000</span></div>
+                    </div>
+                    <!-- <i class="fa fa-caret-right go"></i> -->
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="radio" class="i-checks" name="group1">
+                    <div class="list-left">
+                        <strong>07/11(일)</strong>
+                        <span>18:00</span>
+                        <label>VIP탁구클럽</label>
+                    </div>
+                    <div class="list-center">
+                        <label class="player female">이이등 <span class="levels">6</span></label>
+                        <div class="num-people">빈자리 1 / 총원 2</div>
+                    </div>
+                    <div class="list-right">
+                        <div class="type-wrap">
+                            <span class="level">남6부</span>
+                        </div>
+                        <div class="price"><span class="badge badge-disable">￦8,000</span></div>
+                    </div>
+                    <!-- <i class="fa fa-caret-right go"></i> -->
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="radio" class="i-checks" name="group1">
+                    <div class="list-left">
+                        <strong>07/11(일)</strong>
+                        <span>18:00</span>
+                        <label>엘림탁구클럽</label>
+                    </div>
+                    <div class="list-center">
+                        <label class="player male">김일등 <span class="levels">6</span></label>
+                        <div class="num-people">모집완료 / 총원 3</div>
+                    </div>
+                    <div class="list-right">
+                        <div class="type-wrap">
+                            <span class="type">단체전/</span>
+                            <span class="level">남6~7부 여4~6부</span>
+                        </div>
+                        <div class="price"><span class="badge badge-disable">￦9,000</span></div>
+                    </div>
+                    <!-- <i class="fa fa-caret-right go"></i> -->
+                </label>
+            </li>
+        </ul>
+
+        <div class="container-footer">
+            <button class="btn btn-default modal-call" data-target="#rool-delete">개설방 삭제</button>
+            <button class="btn btn-primary" onclick="asyncMovePage('user/room_detail.html')">상세페이지</button>
+        </div>
+    </div>
+</div>
+<!-- tabbar -->
+<div class="tabbar">
+    <ul>
+        <li>
+            <a href="#" class="room" onclick="asyncMovePage('user/room.html')">
+                <i class="fas fa-table-tennis"></i>
+                <span>매칭방</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="result" onclick="asyncMovePage('user/result.html')">
+                <i class="fas fa-edit"></i>
+                <span>경기결과</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="ranking" onclick="asyncMovePage('user/ranking.html')">
+                <i class="fas fa-trophy"></i>
+                <span>랭킹</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="club" onclick="asyncMovePage('user/club.html')">
+                <i class="fas fa-tasks"></i>
+                <span>탁구장현황</span>
+            </a>
+        </li>
+    </ul>
+</div>
+
+<div class="include" id="modal-participation-cancel"></div>

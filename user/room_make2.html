@@ -2,32 +2,33 @@
     $(function () {
         $('#modal-room-make-date').load('user/modal_room_make_date.html')
         $('#modal-room-make-club').load('user/modal_room_make_club.html')
-        $('#modal-room-make-time-noClub').load('user/modal_room_make_time_noClub.html')
+        $('#modal-room-make-time').load('user/modal_room_make_time.html')
         $('#modal-room-make-info').load('user/modal_room_make_info.html')
         $('#modal-room-complete-reserve').load('user/modal_room_complete_reserve.html')
     })
 </script>
 <div class="appbar">
-    <a href="#" onclick="asyncMovePage('user/index_after.html')" class="home">tak9<br>mate</a>
+    <a href="#" onclick="asyncMovePage('user/index_after.html')" class="home"
+    >tak9<br>mate</a>
     <div class="branding">매칭방</div>
     <a href="#" onclick="asyncMovePage('user/more.html')" class="more"><i class="fa fa-bars"></i></a>
 </div>
 <div class="container room-make">
     <ul class="layout">
-        <li class="club">
-            <div class="content-call">
-                <span>01.</span>
-                <strong>탁구장 선택</strong>
-            </div>
-            <div class="content-select modal-call" data-target="#room-make-club"><i class="fa fa-calendar-alt"></i>
-            </div>
-        </li>
         <li class="date">
             <div class="content-call">
-                <span>02.</span>
+                <span>01.</span>
                 <strong>일자 선택</strong>
             </div>
-            <div class="content-select modal-call" data-target="#room-make-date"><i class="fa fa-table-tennis"></i>
+            <div class="content-select modal-call" data-target="#room-make-date"><i class="fa fa-calendar-alt"></i>
+            </div>
+        </li>
+        <li class="club">
+            <div class="content-call">
+                <span>02.</span>
+                <strong>탁구장 선택</strong>
+            </div>
+            <div class="content-select modal-call" data-target="#room-make-club"><i class="fa fa-table-tennis"></i>
             </div>
         </li>
         <li class="time">
@@ -35,7 +36,7 @@
                 <span>03.</span>
                 <strong>시간 선택</strong>
             </div>
-            <div class="content-select modal-call" data-target="#room-make-time-noClub"><i class="fa fa-clock"></i></div>
+            <div class="content-select modal-call" data-target="#room-make-time"><i class="fa fa-clock"></i></div>
         </li>
         <li class="info">
             <div class="content-call">
@@ -82,7 +83,7 @@
 
 <div class="include" id="modal-room-make-date"></div>
 <div class="include" id="modal-room-make-club"></div>
-<div class="include" id="modal-room-make-time-noClub"></div>
+<div class="include" id="modal-room-make-time"></div>
 <div class="include" id="modal-room-make-info"></div>
 <div class="include" id="modal-room-complete-reserve"></div>
 

@@ -1,21 +1,149 @@
-<script>
-    $(function () {
-        $('#list').load('owner/list.html')
-    })
-</script>
 <div class="appbar">
     <a href="#" class="home" style="line-height:.8rem;font-weight:bold;font-size:.95rem;">tak9<br>mate</a>
     <div class="branding">이용현황</div>
     <a href="#" onclick="asyncMovePage('owner/more.html')" class="more"><i class="fa fa-bars"></i></a>
 </div>
-<div class="container">
-    <div class="include" id="list"></div>
+<div class="container owner use">
+    <div class="search-wrap">
+        <div class="search">
+            <ul>
+                <li>
+                    <input type="text" class="form-control calendar-call" placeholder="조회 시작일">
+                </li>
+                <li>
+                    <input type="text" class="form-control calendar-call" placeholder="조회 종료일">
+                </li>
+            </ul>
+        </div>
+        <div class="search-btn">
+            <button class="btn btn-primary"><i class="fa fa-search"></i></button>
+        </div>
+    </div>
+    <section>
+        <div class="date-wrap">
+            <strong><span class="text-small">총 금액</span> ￦400,000</strong>
+        </div>
+        <ul class="list-wrap">
+            <li>
+                <div class="list-left">
+                    <strong>07/11(일)</strong>
+                    <span>18:00 ~ 20:00</span>
+                </div>
+                <div class="list-center">
+                    <div class="badge badge-default">1탁</div>
+                </div>
+                <div class="list-right text-center">
+                    <label class="player male">김일등 <span class="levels">6</span></label>
+                    <div class="state">모집완료</div>
+                </div>
+                <div class="price">￦10,000</div>
+            </li>
+            <li>
+                <div class="list-left">
+                    <strong>07/15(목)</strong>
+                    <span>13:00 ~ 15:00</span>
+                </div>
+                <div class="list-center">
+                    <div class="badge badge-default">2탁</div>
+                </div>
+                <div class="list-right text-center">
+                    <label class="player female">이이등 <span class="levels">5</span></label>
+                    <div class="state text-danger">예약부도</div>
+                </div>
+                <div class="price"><span>-</span></div>
+            </li>
+            <li>
+                <div class="list-left">
+                    <strong>07/11(일)</strong>
+                    <span>18:00 ~ 20:00</span>
+                </div>
+                <div class="list-center">
+                    <div class="badge badge-default">1탁</div>
+                </div>
+                <div class="list-right text-center">
+                    <label class="player male">김일등 <span class="levels">6</span></label>
+                    <div class="state">모집완료</div>
+                </div>
+                <div class="price">￦8,000</div>
+            </li>
+            <li>
+                <div class="list-left">
+                    <strong>07/11(일)</strong>
+                    <span>18:00 ~ 20:00</span>
+                </div>
+                <div class="list-center">
+                    <div class="badge badge-default">1탁</div>
+                </div>
+                <div class="list-right text-center">
+                    <label class="player male">최삼등 <span class="levels">6</span></label>
+                    <div class="state text-danger">예약부도</div>
+                </div>
+                <div class="price"><span>-</span></div>
+            </li>
+            <li>
+                <div class="list-left">
+                    <strong>07/11(일)</strong>
+                    <span>18:00 ~ 20:00</span>
+                </div>
+                <div class="list-center">
+                    <div class="badge badge-default">3탁</div>
+                </div>
+                <div class="list-right text-center">
+                    <label class="player male">김일등 <span class="levels">6</span></label>
+                    <div class="state">모집완료</div>
+                </div>
+                <div class="price">￦5,000</div>
+            </li>
+            <li>
+                <div class="list-left">
+                    <strong>07/11(일)</strong>
+                    <span>18:00 ~ 20:00</span>
+                </div>
+                <div class="list-center">
+                    <div class="badge badge-default">4탁</div>
+                </div>
+                <div class="list-right text-center">
+                    <label class="player female">박사등 <span class="levels">6</span></label>
+                    <div class="state">모집완료</div>
+                </div>
+                <div class="price">￦11,000</div>
+            </li>
+            <li>
+                <div class="list-left">
+                    <strong>07/11(일)</strong>
+                    <span>18:00 ~ 20:00</span>
+                </div>
+                <div class="list-center">
+                    <div class="badge badge-default">1탁</div>
+                </div>
+                <div class="list-right text-center">
+                    <label class="player male">김일등 <span class="levels">6</span></label>
+                    <div class="state">모집완료</div>
+                </div>
+                <div class="price">￦12,000</div>
+            </li>
+            <li>
+                <div class="list-left">
+                    <strong>07/11(일)</strong>
+                    <span>18:00 ~ 20:00</span>
+                </div>
+                <div class="list-center">
+                    <div class="badge badge-default">2탁</div>
+                </div>
+                <div class="list-right text-center">
+                    <label class="player male">김일등 <span class="levels">6</span></label>
+                    <div class="state">모집완료</div>
+                </div>
+                <div class="price">￦10,000</div>
+            </li>
+        </ul>
+    </section>
 </div>
 <!-- tabbar -->
 <div class="tabbar">
     <ul>
         <li>
-            <a href="#" class="state-reservation" onclick="asyncMovePage('owner/state_reservation.html')">
+            <a href="#" class="state-reservation" onclick="asyncMovePage('owner/mngt_reservation.html')">
                 <i class="fas fa-edit"></i>
                 <span>예약관리</span>
             </a>
@@ -27,17 +155,20 @@
             </a>
         </li>
         <li>
-            <a href="#" class="offday" onclick="asyncMovePage('owner/offday.html')">
+            <a href="#" class="day-off" onclick="asyncMovePage('owner/day_off.html')">
                 <i class="fas fa-calendar"></i>
                 <span>휴무일관리</span>
             </a>
         </li>
         <li>
-            <a href="#" class="mngt-reservation" onclick="asyncMovePage('owner/mngt_reservation.html')">
+            <a href="#" class="mngt-reservation" onclick="asyncMovePage('owner/mngt_table.html')">
                 <i class="fas fa-table"></i>
                 <span>탁구대관리</span>
             </a>
         </li>
     </ul>
 </div>
-</div>
+
+<script>
+    calendarModalInput()
+</script>

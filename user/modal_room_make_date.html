@@ -1,0 +1,30 @@
+
+<div class="modal" id="room-make-date">
+    <div class="modal-dialog">
+        <div class="modal-header">
+            <h2>일자 선택</h2>
+            <span class="modal-close"></span>
+        </div>
+        <div class="modal-body room">
+            <section class="room-regist">
+                <div class="calendar-wrap">
+                </div>
+            </section>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-default modal-close">취소</button>
+            <button class="btn btn-success modal-close" onclick="dateInput()">확인</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    modalClose();
+    normalBtn();
+    makeCalendar();
+    function dateInput() {
+        $('.date').find('.content-select').empty()
+        $('.date').find('.content-select').addClass('on')
+        $('.date').find('.content-select').append('<div class="content-select-detail">7월 30일(금)</div>')
+    }
+</script>

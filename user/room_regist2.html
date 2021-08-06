@@ -5,7 +5,7 @@
     })
 </script>
 <div class="appbar">
-    <a href="#" onclick="asyncMovePage('user/index_after.html')" class="home" style="line-height:.8rem;font-weight:bold;font-size:.95rem;">tak9<br>mate</a>
+    <a href="#" onclick="asyncMovePage('user/index_after.html')" class="home">tak9<br>mate</a>
     <div class="branding">매칭방</div>
     <a href="#" onclick="asyncMovePage('user/more.html')" class="more"><i class="fa fa-bars"></i></a>
 </div>
@@ -16,113 +16,109 @@
         <li><span>03</span><strong>시간 선택</strong></li>
         <li><span>04</span><strong>정보 입력</strong></li>
     </ul>
-    <div class="summary">
-        <div class="form-group">
-            <label class="control-label col-4">일자</label>
-            <div class="col-8">7월 26일(월)</div>
+    <ul class="summary">
+        <li>7월 26일(월)</li>
+        <li>엘림탁구클럽<div class="text-small mt-5">대전시 중구 / ￦10,000</div></li>
+    </ul>
+    <section class="bottom-layer bg-white">
+        <div class="search-wrap">
+            <div class="search">
+                <ul>
+                    <li>
+                        <select class="form-control">
+                            <option>시, 도 선택</option>
+                        </select>
+                    </li>
+                    <li>
+                        <select class="form-control">
+                            <option>읍,면,동 선택</option>
+                        </select>
+                    </li>
+                    <li class="width100">
+                        <input type="text" class="form-control" placeholder="탁구장명 입력">
+                    </li>
+                </ul>
+            </div>
+            <div class="search-btn">
+                <button class="btn btn-primary"><i class="fa fa-search"></i></button>
+            </div>
         </div>
-        <div class="form-group">
-            <label class="control-label col-4">탁구장</label>
-            <div class="col-8"></div>
-        </div>
-    </div>
-    <div class="search-wrap">
-        <div class="search">
-            <ul>
+        <div class="club">
+            <ul class="list-wrap list-selected">
                 <li>
-                    <select class="form-control">
-                        <option>시, 도 선택</option>
-                    </select>
+                    <div class="club-master">
+                        <h4>VIP탁구클럽 <i class="fa fa-star"></i></h4>
+                        <!-- <strong>042-525-0000</strong> -->
+                        <span>대전시 서구 탄방동 12</span>
+                        <div class="schedule">
+                            <label>주중 : <em>09:00 ~ 17:00</em></label>
+                            <label>주말 : <em>09:00 ~ 22:00</em></label>
+                        </div>
+                    </div>
+                    <div class="club-slave">
+                        <strong class="badge badge-disable">￦ 10,000</strong>
+                        <span>예약탁구대 <i class="badge badge-primary">2</i></span>
+                        <span>전체탁구대 <i class="badge badge-success">4</i></span>
+                        <strong class="badge badge-disable">월요일 휴무</strong>
+                    </div>
+                    <!-- <i class="fa fa-caret-right go"></i> -->
                 </li>
                 <li>
-                    <select class="form-control">
-                        <option>읍,면,동 선택</option>
-                    </select>
+                    <div class="club-master">
+                        <h4>태평탁구 <i class="fa fa-star"></i></h4>
+                        <!-- <strong>042-525-0000</strong> -->
+                        <span>대전시 서구 탄방동 12</span>
+                        <div class="schedule">
+                            <label>주중 : <em>09:00 ~ 17:00</em></label>
+                            <label>주말 : <em>09:00 ~ 22:00</em></label>
+                        </div>
+                    </div>
+                    <div class="club-slave">
+                        <strong class="badge badge-disable">￦ 10,000</strong>
+                        <span>예약탁구대 <i class="badge badge-primary">8</i></span>
+                        <span>전체탁구대 <i class="badge badge-success">10</i></span>
+                        <strong class="badge badge-disable">월요일 휴무</strong>
+                    </div>
+                    <!-- <i class="fa fa-caret-right go"></i> -->
                 </li>
-                <li class="width100">
-                    <input type="text" class="form-control" placeholder="탁구장명 입력">
+                <li>
+                    <div class="club-master">
+                        <h4>핑퐁탁구클럽 <i class="fa fa-star on"></i></h4>
+                        <!-- <strong>042-525-0000</strong> -->
+                        <span>대전시 서구 탄방동 12</span>
+                        <div class="schedule">
+                            <label>주중 : <em>09:00 ~ 17:00</em></label>
+                            <label>주말 : <em>09:00 ~ 22:00</em></label>
+                        </div>
+                    </div>
+                    <div class="club-slave">
+                        <strong class="badge badge-disable">￦ 10,000</strong>
+                        <span>예약탁구대 <i class="badge badge-primary">6</i></span>
+                        <span>전체탁구대 <i class="badge badge-success">8</i></span>
+                        <strong class="badge badge-disable">월요일 휴무</strong>
+                    </div>
+                    <!-- <i class="fa fa-caret-right go"></i> -->
+                </li>
+                <li>
+                    <div class="club-master">
+                        <h4>엘림탁구클럽 <i class="fa fa-star on"></i></h4>
+                        <!-- <strong>042-525-0000</strong> -->
+                        <span>대전시 서구 탄방동 12</span>
+                        <div class="schedule">
+                            <label>주중 : <em>09:00 ~ 17:00</em></label>
+                            <label>주말 : <em>09:00 ~ 22:00</em></label>
+                        </div>
+                    </div>
+                    <div class="club-slave">
+                        <strong class="badge badge-disable">￦ 10,000</strong>
+                        <span>예약탁구대 <i class="badge badge-primary">3</i></span>
+                        <span>전체탁구대 <i class="badge badge-success">6</i></span>
+                        <strong class="badge badge-disable">월요일 휴무</strong>
+                    </div>
+                    <!-- <i class="fa fa-caret-right go"></i> -->
                 </li>
             </ul>
         </div>
-        <div class="search-btn">
-            <button class="btn btn-primary"><i class="fa fa-search"></i></button>
-        </div>
-    </div>
-    <section class="club">
-        <ul class="list-wrap list-selected">
-            <li>
-                <div class="club-master">
-                    <h4>VIP탁구클럽 <i class="fa fa-star"></i></h4>
-                    <!-- <strong>042-525-0000</strong> -->
-                    <span>대전시 서구 탄방동 12</span>
-                    <div class="schedule">
-                        <label>주중 : <em>09:00 ~ 17:00</em></label>
-                        <label>주말 : <em>09:00 ~ 22:00</em></label>
-                    </div>
-                </div>
-                <div class="club-slave">
-                    <strong class="badge badge-disable">￦ 10,000</strong>
-                    <span>예약탁구대 <i class="badge badge-primary">2</i></span>
-                    <span>전체탁구대 <i class="badge badge-success">4</i></span>
-                    <strong class="badge badge-disable">월요일 휴무</strong>
-                </div>
-                <!-- <i class="fa fa-caret-right go"></i> -->
-            </li>
-            <li>
-                <div class="club-master">
-                    <h4>태평탁구 <i class="fa fa-star"></i></h4>
-                    <!-- <strong>042-525-0000</strong> -->
-                    <span>대전시 서구 탄방동 12</span>
-                    <div class="schedule">
-                        <label>주중 : <em>09:00 ~ 17:00</em></label>
-                        <label>주말 : <em>09:00 ~ 22:00</em></label>
-                    </div>
-                </div>
-                <div class="club-slave">
-                    <strong class="badge badge-disable">￦ 10,000</strong>
-                    <span>예약탁구대 <i class="badge badge-primary">8</i></span>
-                    <span>전체탁구대 <i class="badge badge-success">10</i></span>
-                    <strong class="badge badge-disable">월요일 휴무</strong>
-                </div>
-                <!-- <i class="fa fa-caret-right go"></i> -->
-            </li>
-            <li>
-                <div class="club-master">
-                    <h4>핑퐁탁구클럽 <i class="fa fa-star on"></i></h4>
-                    <!-- <strong>042-525-0000</strong> -->
-                    <span>대전시 서구 탄방동 12</span>
-                    <div class="schedule">
-                        <label>주중 : <em>09:00 ~ 17:00</em></label>
-                        <label>주말 : <em>09:00 ~ 22:00</em></label>
-                    </div>
-                </div>
-                <div class="club-slave">
-                    <strong class="badge badge-disable">￦ 10,000</strong>
-                    <span>예약탁구대 <i class="badge badge-primary">6</i></span>
-                    <span>전체탁구대 <i class="badge badge-success">8</i></span>
-                    <strong class="badge badge-disable">월요일 휴무</strong>
-                </div>
-                <!-- <i class="fa fa-caret-right go"></i> -->
-            </li>
-            <li>
-                <div class="club-master">
-                    <h4>엘림탁구클럽 <i class="fa fa-star on"></i></h4>
-                    <!-- <strong>042-525-0000</strong> -->
-                    <span>대전시 서구 탄방동 12</span>
-                    <div class="schedule">
-                        <label>주중 : <em>09:00 ~ 17:00</em></label>
-                        <label>주말 : <em>09:00 ~ 22:00</em></label>
-                    </div>
-                </div>
-                <div class="club-slave">
-                    <strong class="badge badge-disable">￦ 10,000</strong>
-                    <span>예약탁구대 <i class="badge badge-primary">3</i></span>
-                    <span>전체탁구대 <i class="badge badge-success">6</i></span>
-                    <strong class="badge badge-disable">월요일 휴무</strong>
-                </div>
-                <!-- <i class="fa fa-caret-right go"></i> -->
-            </li>
-        </ul>
     </section>
     <div class="container-footer">
         <button class="btn btn-default" onclick="asyncMovePage('user/room_regist.html')">이전</button>
@@ -153,7 +149,7 @@
         <li>
             <a href="#" class="club" onclick="asyncMovePage('user/club.html')">
                 <i class="fas fa-tasks"></i>
-                <span>탁구장예약</span>
+                <span>탁구장현황</span>
             </a>
         </li>
     </ul>

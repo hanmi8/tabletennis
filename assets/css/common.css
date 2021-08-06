@@ -64,6 +64,7 @@ ul, li {vertical-align:middle;}
 .pd-x30 {padding:0 30px;}
 .pd-x40 {padding:0 40px;}
 
+.mt-5 {margin-top:5px;}
 .mt-10 {margin-top:10px;}
 .mt-20 {margin-top:20px;}
 .mt-30 {margin-top:30px;}
@@ -117,21 +118,22 @@ ul, li {vertical-align:middle;}
 input[type=text]::placeholder {color:#aaa;}
 .form-control[disabled] {background:#eee;color:#888;}
 .form-vertical {padding:20px;}
-.form-vertical .form-group {margin-bottom:10px;}
+.form-vertical .form-group {margin-bottom:30px;}
 .form-vertical .control-label {width:100%;text-align:left;margin-bottom:5px;}
 .form-vertical .control-label+div {width:100%;}
 
 .form-group {display:flex;flex-wrap:wrap;align-items:center;margin:10px 0;word-break:keep-all;}
 .control-label {text-align:right;padding-right:0;}
 .control-label:after {content:':';margin-left:5px;}
-.calendar {position:relative;}
-.calendar a {position:absolute;right:20px;top:6px;}
+/*.calendar {position:relative;}*/
+/*.calendar a {position:absolute;right:20px;top:6px;}*/
 .input-btn,.input-double {display:flex;align-items:center;justify-content:space-between;width:100%;}
 .input-price {position:relative;width:100%;}
 .input-price input {padding-left:40px;}
 .input-price span {position:absolute;left:10px;top:50%;transform:translateY(-50%);}
 .input-btn button {flex:0 0 50px;margin-left:5px;}
 .input-price span {flex:0 0 50px;margin-left:5px;text-align:center;}
+.radio-wrap label {display:inline-block;margin-right:20px;}
 .form-group select {margin-bottom:5px;}
 
 

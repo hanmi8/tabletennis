@@ -1,6 +1,6 @@
 <div class="appbar">
-    <a href="#" onclick="asyncMovePage('user/index_after.html')" class="home" style="line-height:.8rem;font-weight:bold;font-size:.95rem;">tak9<br>mate</a>
-    <div class="branding">경기결과</div>
+    <a href="#" onclick="asyncMovePage('user/index_after.html')" class="home">tak9<br>mate</a>
+    <div class="branding">경기결과 등록</div>
     <a href="#" onclick="asyncMovePage('user/more.html')" class="more"><i class="fa fa-bars"></i></a>
 </div>
 <div class="container result">
@@ -44,12 +44,13 @@
                 </div>
             </div>
         </div>
-        <div class="score-wrap bg-white mt-10">
+        <h3>세트스코어 입력</h3>
+        <div class="score-wrap bg-white box-shadow box-border-radius">
             <div class="score">
                 <div class="player-wrap first">
                     <label class="player male">김아무 <span class="levels">6</span></label>
                     <select class="form-control">
-                        <option>점수선택</option>
+                        <option>0</option>
                         <option>1</option>
                         <option>2</option>
                         <option>3</option>
@@ -62,7 +63,7 @@
                 <div class="player-wrap">
                     <label class="player male">최삼등 <span class="levels">6</span></label>
                     <select class="form-control">
-                        <option>점수선택</option>
+                        <option>0</option>
                         <option>1</option>
                         <option>2</option>
                         <option>3</option>
@@ -131,13 +132,14 @@
                 </div>
             </div>
         </div>
-        <div class="score-wrap bg-white mt-10">
+        <h3>세트스코어 입력</h3>
+        <div class="score-wrap bg-white box-shadow box-border-radius">
             <div class="score">
                 <div class="player-wrap first">
                     <label class="player male">김아무 <span class="levels">6</span></label>
                     <label class="player female">이이등 <span class="levels">6</span></label>
                     <select class="form-control">
-                        <option>점수선택</option>
+                        <option>0</option>
                         <option>1</option>
                         <option>2</option>
                         <option>3</option>
@@ -151,7 +153,7 @@
                     <label class="player male">최삼등 <span class="levels">6</span></label>
                     <label class="player female">이장미 <span class="levels">6</span></label>
                     <select class="form-control">
-                        <option>점수선택</option>
+                        <option>0</option>
                         <option>1</option>
                         <option>2</option>
                         <option>3</option>
@@ -165,8 +167,8 @@
         </div>
     </div>
     <div class="container-footer">
-        <button class="btn btn-default" onclick="asyncMovePage('result.html')"><i class="fa fa-times"></i> 등록 취소</button>
-        <button class="btn btn-primary"><i class="fa fa-check"></i> 결과 등록</button>
+        <button class="btn btn-default" onclick="asyncMovePage('result.html')">등록 취소</button>
+        <button class="btn btn-primary">결과 등록</button>
     </div>
 </div>
 <!-- tabbar -->
@@ -193,7 +195,7 @@
         <li>
             <a href="#" class="club" onclick="asyncMovePage('user/club.html')">
                 <i class="fas fa-tasks"></i>
-                <span>탁구장예약</span>
+                <span>탁구장현황</span>
             </a>
         </li>
     </ul>

@@ -1,13 +1,25 @@
 <div class="appbar">
-    <a href="#" onclick="asyncMovePage('user/index_after.html')" class="home" style="line-height:.8rem;font-weight:bold;font-size:.95rem;">tak9<br>mate</a>
+    <a href="#" onclick="asyncMovePage('user/index_after.html')" class="home">tak9<br>mate</a>
     <div class="branding">경기결과</div>
     <a href="#" onclick="asyncMovePage('user/more.html')" class="more"><i class="fa fa-bars"></i></a>
 </div>
 <div class="container result">
-    <div class="date-select">
-        <strong>2021년 6월 <i class="fa fa-calendar-alt"></i></strong>
+    <div class="search-wrap">
+        <div class="search">
+            <ul>
+                <li>
+                    <input type="text" class="form-control calendar-call" placeholder="조회 시작일">
+                </li>
+                <li>
+                    <input type="text" class="form-control calendar-call" placeholder="조회 종료일">
+                </li>
+            </ul>
+        </div>
+        <div class="search-btn">
+            <button class="btn btn-primary"><i class="fa fa-search"></i></button>
+        </div>
     </div>
-    <ul class="list-wrap">
+    <ul class="list-wrap box-shadow box-border-radius">
         <li onclick="asyncMovePage('user/result_regist.html')">
             <div class="date">
                 <strong>06/26(토)</strong>
@@ -17,13 +29,13 @@
                 <div class="player-wrap first">
                     <label class="player male">김아무<span class="levels">6</span></label>
                     <div class="input-box">
-                        <strong></strong>
+                        <strong>4</strong>
                     </div>
                 </div>
                 <div class="player-wrap">
                     <label class="player female">이장미<span class="levels">6</span></label>
                     <div class="input-box">
-                        <strong></strong>
+                        <strong>3</strong>
                     </div>
                 </div>
             </div>
@@ -115,8 +127,12 @@
         <li>
             <a href="#" class="club" onclick="asyncMovePage('user/club.html')">
                 <i class="fas fa-tasks"></i>
-                <span>탁구장예약</span>
+                <span>탁구장현황</span>
             </a>
         </li>
     </ul>
 </div>
+
+<script>
+    calendarModalInput()
+</script>

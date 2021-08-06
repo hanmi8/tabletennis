@@ -1,5 +1,4 @@
-
-<div class="modal" id="room-make-second">
+<div class="modal" id="room-make-club">
     <div class="modal-dialog">
         <div class="modal-header">
             <h2>탁구장 선택</h2>
@@ -22,13 +21,35 @@
                         <li class="width100">
                             <input type="text" class="form-control" placeholder="탁구장명 입력">
                         </li>
+                        <li class="width100 input-price no-club-price">
+                            <input type="text" class="form-control" placeholder="이용요금 입력">
+                            <span>￦</span>
+                        </li>
                     </ul>
                 </div>
                 <div class="search-btn">
                     <button class="btn btn-primary"><i class="fa fa-search"></i></button>
                 </div>
             </div>
-            <section class="club">
+            <div class="form-group">
+                <div class="radio-wrap">
+                    <!--                    <label class="on"><input type="radio" class="i-checks" name="group1" checked> 등록된 탁구장 검색</label>-->
+                    <label class="direct-input"><input type="checkbox" class="i-checks"> 직접 입력</label>
+                </div>
+            </div>
+            <section class="club on">
+                <div class="search-content-default">
+                    <div>
+                        <i class="fa fa-exclamation-circle"></i>
+                        지역이나 탁구장명을 입력하여 검색해 주세요.
+                    </div>
+                </div>
+            </section>
+            <section class="club" id="search-result">
+                <div class="no-club">
+                    <i class="fa fa-exclamation-circle"></i>
+                    찾으시는 탁구장이 없을 경우 "직접입력"을 선택하셔서 탁구장명을 입력하세요.
+                </div>
                 <ul class="list-wrap list-selected">
                     <li>
                         <div class="club-master">
@@ -107,7 +128,7 @@
         </div>
         <div class="modal-footer">
             <button class="btn btn-default modal-close">취소</button>
-            <button class="btn btn-success modal-close" onclick="secondInput()">확인</button>
+            <button class="btn btn-success modal-close" onclick="clubInput()">확인</button>
         </div>
     </div>
 </div>
@@ -115,14 +136,35 @@
 <script>
     modalClose();
     listSelected();
-    function secondInput() {
-        $('.second').find('.content-select').empty()
-        $('.second').find('.content-select').addClass('on')
-        $('.second').find('.content-select').append('<div class="content-select-detail">\n' +
+
+    function clubInput() {
+        $('.club').find('.content-select').empty()
+        $('.club').find('.content-select').addClass('on')
+        $('.club').find('.content-select').append('<div class="content-select-detail">\n' +
             '                    엘림탁구클럽\n' +
             '                    <div class="text-small mt-10">\n' +
-            '                        대전시 중구 / ￦10,000\n' +
+            '                        대전시 중구' +
             '                    </div>\n' +
             '                </div>')
     }
+
+    $('.search-btn').click(function () {
+        $('section.club').hide()
+        $('#search-result').show();
+    })
+
+    $('.direct-input').find('input').on('ifChanged', function(event){
+        $('.search').toggleClass('no-clud');
+        $('.search-btn').toggle();
+        $('.list-wrap').toggle();
+        $('.no-club-price').toggle();
+        $('.search-content-default').toggle();
+    });
+    $('.direct-input').find('input').change(function(event){
+        $('.search').toggleClass('no-clud');
+        $('.search-btn').toggle();
+        $('.list-wrap').toggle();
+        $('.no-club-price').toggle();
+        $('.search-content-default').toggle();
+    });
 </script>

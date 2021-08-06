@@ -6,7 +6,7 @@
 </script>
 <div class="appbar">
     <a href="#" onclick="asyncMovePage('user/index_after.html')" class="home"
-       style="line-height:.8rem;font-weight:bold;font-size:.95rem;">tak9<br>mate</a>
+      >tak9<br>mate</a>
     <div class="branding">매칭방</div>
     <a href="#" onclick="asyncMovePage('user/more.html')" class="more"><i class="fa fa-bars"></i></a>
 </div>
@@ -17,25 +17,14 @@
         <li><span>03</span><strong>시간 선택</strong></li>
         <li class="on"><span>04</span><strong>정보 입력</strong></li>
     </ul>
-    <div class="summary">
-        <div class="form-group">
-            <label class="control-label col-4">일자</label>
-            <div class="col-8">7월 26일(월)</div>
-        </div>
-        <div class="form-group">
-            <label class="control-label col-4">탁구장</label>
-            <div class="col-8">엘림탁구클럽(대전시 중구 / ￦10,000)</div>
-        </div>
-        <div class="form-group">
-            <label class="control-label col-4">시간</label>
-            <div class="col-8">13:00 ~ 15:00</div>
-        </div>
-        <div class="form-group">
-            <label class="control-label col-4">상세정보</label>
-            <div class="col-8"></div>
-        </div>
-    </div>
-    <div class="form-vertical">
+    <ul class="summary">
+        <li>7월 26일(월)</li>
+        <li>엘림탁구클럽<div class="text-small mt-5">대전시 중구 / ￦10,000</div></li>
+        <li>1탁 / 13:00 ~ 15:00</li>
+        <li></li>
+    </ul>
+    <section class="bottom-layer bg-white">
+        <div class="form-vertical">
         <div class="form-group">
             <label class="control-label"><span class="text-danger">*</span> 경기인원</label>
             <div class="">
@@ -119,6 +108,7 @@
             </div>
         </div>
     </div>
+    </section>
     <div class="container-footer">
         <button class="btn btn-default" onclick="asyncMovePage('user/room_regist3.html')">이전</button>
         <button class="btn btn-primary" onclick="asyncMovePage('user/room_regist5.html')">다음</button>
@@ -148,7 +138,7 @@
         <li>
             <a href="#" class="club" onclick="asyncMovePage('user/club.html')">
                 <i class="fas fa-tasks"></i>
-                <span>탁구장예약</span>
+                <span>탁구장현황</span>
             </a>
         </li>
     </ul>

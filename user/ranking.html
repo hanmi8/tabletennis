@@ -1,10 +1,11 @@
 <script>
     $(function(){
+        $('#modal-friend-cancel').load('user/modal_friend_cancel.html')
         $('#modal-player-info').load('user/modal_player.html')
     })
 </script>
 <div class="appbar">
-    <a href="#" onclick="asyncMovePage('user/index_after.html')" class="home" style="line-height:.8rem;font-weight:bold;font-size:.95rem;">tak9<br>mate</a>
+    <a href="#" onclick="asyncMovePage('user/index_after.html')" class="home">tak9<br>mate</a>
     <div class="branding">랭킹</div>
     <a href="#" onclick="asyncMovePage('user/more.html')" class="more"><i class="fa fa-bars"></i></a>
 </div>
@@ -36,15 +37,28 @@
                 <li>
                     <select class="form-control">
                         <option>부수선택</option>
-                    </select>
-                </li>
-                <li>
-                    <select class="form-control">
-                        <option>성별선택</option>
+                        <option>== 남자 ==</option>
+                        <option>남 S 부</option>
+                        <option>남 1 부</option>
+                        <option>남 2 부</option>
+                        <option>남 3 부</option>
+                        <option>남 4 부</option>
+                        <option>남 5 부</option>
+                        <option>남 6 부</option>
+                        <option>남 7 부</option>
+                        <option>== 여자 ==</option>
+                        <option>여 S 부</option>
+                        <option>여 1 부</option>
+                        <option>여 2 부</option>
+                        <option>여 3 부</option>
+                        <option>여 4 부</option>
+                        <option>여 5 부</option>
+                        <option>여 6 부</option>
+                        <option>여 7 부</option>
                     </select>
                 </li>
                 <li><input type="text" class="form-control" placeholder="랭킹입력"></li>
-                <li><input type="text" class="form-control" placeholder="별칭입력"></li>
+                <li class="width100"><input type="text" class="form-control" placeholder="별칭입력"></li>
             </ul>
         </div>
         <div class="search-btn">
@@ -55,7 +69,7 @@
         <button class="btn btn-outline btn-default">필터 <i class="fa fa-chevron-down"></i></button>
     </div>
 
-    <ul class="list-wrap">
+    <ul class="list-wrap box-shadow-bottom box-border-radius">
         <li class="first">
             <i class="fa fa-trophy"></i>
             <strong>1위</strong>
@@ -64,7 +78,7 @@
                 <div class="number">2324p</div>
                 <div class="count">50승 62패</div>
             </div>
-            <a href="#"><i class="fa fa-user"></i></a>
+            <a href="#" class="friend"><i class="fa fa-user"></i></a>
         </li>
         <li class="second">
             <i class="fa fa-medal"></i>
@@ -74,7 +88,7 @@
                 <div class="number">2020p</div>
                 <div class="count">45승 52패</div>
             </div>
-            <a href="#" class="on"><i class="fa fa-user"></i></a>
+            <a href="#" class="on friend"><i class="fa fa-user"></i></a>
         </li>
         <li class="third">
             <i class="fa fa-star"></i>
@@ -85,7 +99,7 @@
                 <div class="number">1909p</div>
                 <div class="count">50승 10패</div>
             </div>
-            <a href="#"><i class="fa fa-user"></i></a>
+            <a href="#" class="friend"><i class="fa fa-user"></i></a>
         </li>
         <li>
             <i></i>
@@ -96,7 +110,7 @@
                 <div class="number">1909p</div>
                 <div class="count">50승 10패</div>
             </div>
-            <a href="#" class="on"><i class="fa fa-user"></i></a>
+            <a href="#" class="on friend"><i class="fa fa-user"></i></a>
         </li>
         <li>
             <i></i>
@@ -107,7 +121,7 @@
                 <div class="number">1909p</div>
                 <div class="count">50승 10패</div>
             </div>
-            <a href="#"><i class="fa fa-user"></i></a>
+            <a href="#" class="friend"><i class="fa fa-user"></i></a>
         </li>
         <li>
             <i></i>
@@ -118,7 +132,7 @@
                 <div class="number">1909p</div>
                 <div class="count">50승 10패</div>
             </div>
-            <a href="#"><i class="fa fa-user"></i></a>
+            <a href="#" class="friend"><i class="fa fa-user"></i></a>
         </li>
         <li>
             <i></i>
@@ -131,7 +145,7 @@
                 <div class="number">1909p</div>
                 <div class="count">50승 10패</div>
             </div>
-            <a href="#" class="on"><i class="fa fa-user"></i></a>
+            <a href="#" class="on friend"><i class="fa fa-user"></i></a>
         </li>
         <li>
             <i></i>
@@ -142,7 +156,7 @@
                 <div class="number">1909p</div>
                 <div class="count">50승 10패</div>
             </div>
-            <a href="#" class="on"><i class="fa fa-user"></i></a>
+            <a href="#" class="on friend"><i class="fa fa-user"></i></a>
         </li>
         <li>
             <i></i>
@@ -153,7 +167,7 @@
                 <div class="number">1909p</div>
                 <div class="count">50승 10패</div>
             </div>
-            <a href="#"><i class="fa fa-user"></i></a>
+            <a href="#" class="friend"><i class="fa fa-user"></i></a>
         </li>
         <li>
             <i></i>
@@ -164,7 +178,7 @@
                 <div class="number">1909p</div>
                 <div class="count">50승 10패</div>
             </div>
-            <a href="#"><i class="fa fa-user"></i></a>
+            <a href="#" class="friend"><i class="fa fa-user"></i></a>
         </li>
     </ul>
 </div>
@@ -192,10 +206,21 @@
         <li>
             <a href="#" class="club" onclick="asyncMovePage('user/club.html')">
                 <i class="fas fa-tasks"></i>
-                <span>탁구장예약</span>
+                <span>탁구장현황</span>
             </a>
         </li>
     </ul>
 </div>
 
 <div class="include" id="modal-player-info"></div>
+<div class="include" id="modal-friend-cancel"></div>
+
+<script>
+    $(function(){
+        $('a.friend').click(function(){
+            if($(this).hasClass('on')){
+                $('#friend-cancel').show();
+            }
+        })
+    })
+</script>

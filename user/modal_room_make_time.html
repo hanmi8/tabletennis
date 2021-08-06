@@ -1,55 +1,11 @@
-<div class="appbar">
-    <a href="#" onclick="asyncMovePage('user/index_after.html')" class="home">tak9<br>mate</a>
-    <div class="branding">엘림탁구클럽</div>
-    <a href="#" onclick="asyncMovePage('user/more.html')" class="more"><i class="fa fa-bars"></i></a>
-</div>
-<div class="container reservation">
-    <div class="slider">
-        <div class="slider-item">
-            <a href="#"><img src="assets/images/slide_01.png"></a>
+
+<div class="modal" id="room-make-time">
+    <div class="modal-dialog">
+        <div class="modal-header">
+            <h2>시간 선택</h2>
+            <span class="modal-close"></span>
         </div>
-        <div class="slider-item">
-            <a href="#"><img src="assets/images/slide_02.png"></a>
-        </div>
-        <div class="slider-item">
-            <a href="#"><img src="assets/images/slide_03.png"></a>
-        </div>
-        <div class="slider-item">
-            <a href="#"><img src="assets/images/slide_04.png"></a>
-        </div>
-        <div class="slider-item">
-            <a href="#"><img src="assets/images/slide_05.png"></a>
-        </div>
-    </div>
-    <div class="container-header box-shadow-bottom border-radius-bottom">
-        <div class="header-left">
-            <strong>042-525-0000
-                <button class="btn btn-default btn-sm"><i class="fa fa-phone-alt"></i></button>
-            </strong>
-            <span>대전시 서구 탄방동 11-1 4F</span>
-        </div>
-        <div class="header-right">
-            <div class="wrap">
-                <strong class="price">￦ 10,000</strong>
-                <span class="badge badge-disable">월요일 휴무</span>
-            </div>
-            <i class="favorite fa fa-star"></i>
-        </div>
-    </div>
-    <div class="select-room">
-        <div class="search-wrap">
-            <div class="search">
-                <ul>
-                    <li class="width100">
-                        <input type="text" class="form-control calendar-call" value="2021/08/01">
-                    </li>
-                </ul>
-                <div class="search-btn">
-                    <button class="btn btn-primary"><i class="fa fa-search"></i></button>
-                </div>
-            </div>
-        </div>
-        <div class="reserve-wrap bg-white box-border-radius box-shadow">
+        <div class="modal-body room">
             <div class="scroll-horizontal">
                 <div class="scroll_x_table table-scroll" id="table-scroll">
                     <div class="table-wrap">
@@ -199,55 +155,22 @@
                 </div>
             </div>
         </div>
+        <div class="modal-footer">
+            <button class="btn btn-default modal-close">취소</button>
+            <button class="btn btn-success modal-close" onclick="timeInput()">결제하기</button>
+        </div>
     </div>
 </div>
-<!-- tabbar -->
-<div class="tabbar">
-    <ul>
-        <li>
-            <a href="#" class="room" onclick="asyncMovePage('user/room.html')">
-                <i class="fas fa-table-tennis"></i>
-                <span>매칭방</span>
-            </a>
-        </li>
-        <li>
-            <a href="#" class="result" onclick="asyncMovePage('user/result.html')">
-                <i class="fas fa-edit"></i>
-                <span>경기결과</span>
-            </a>
-        </li>
-        <li>
-            <a href="#" class="ranking" onclick="asyncMovePage('user/ranking.html')">
-                <i class="fas fa-trophy"></i>
-                <span>랭킹</span>
-            </a>
-        </li>
-        <li class="on">
-            <a href="#" class="club" onclick="asyncMovePage('user/club.html')">
-                <i class="fas fa-tasks"></i>
-                <span>탁구장현황</span>
-            </a>
-        </li>
-    </ul>
-</div>
-
 
 <script>
-    $(function () {
-        $('.slider').bxSlider({
-            auto: true,
-            stopAutoOnClick: true,
-            pager: true,
-            slideWidth: 800,
-            autoControls: false,
-            responsive: true,
-            maxSlides: 1,
-            minSlides: 1,
-        });
-    });
-    reserveTabs()
-    reserveTime()
-    calendarModal()
-    calendarModalInput()
+    modalClose();
+    reserveTabs();
+    reserveTime();
+    badgeReservation();
+    function timeInput() {
+        $('.time').find('.content-select').empty()
+        $('.time').find('.content-select').addClass('on')
+        $('.time').find('.content-select').append('<div class="content-select-detail">13:00 ~ 15:00</div>')
+    }
     $(".main-table").clone(true).appendTo('#table-scroll').addClass('clone');
 </script>
